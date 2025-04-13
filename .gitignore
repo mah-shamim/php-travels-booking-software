@@ -1,9 +1,10 @@
 app/logs/*
+admin/cache/*
 .idea
 .vscode
 .git
-api/system/cache/*
 app/cache/*
+cache/**
 **/.DS_Store
 db/*
-config.php
+composer.lock

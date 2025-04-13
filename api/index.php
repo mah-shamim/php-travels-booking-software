@@ -1,157 +1,58 @@
 <?php
-/********************************************************************************
-// * PHPTRAVELS - Travel Technology Partner                                       *
-// * Copyright (c) phptravels.com. All Rights Reserved                          *
-// ******************************************************************************
-//  * Email: info@phptravels.com                                                *
-//  * Website: http://www.phptravels.com/                                       *
-// ******************************************************************************
-//  * This script is property of PHPTRAVELS you are not allowed to rebuild      *
-//  * customize, resell, use on multiple domains, change ownership for your     *
-//  * interest, or copy codes from any part of this script, we will take        *
-//  * legal action against anyone who broke our terms, respect to get respected *
-//  * Thank you.                                                                *
-// ******************************************************************************/
 
-// Software Enviroments
-define('ENVIRONMENT', 'production');
+// ROUTER NAMESPACE
+namespace AppRouter;use Exception;use DateTime;use DateInterval;use InvalidArgumentException;class Router{const NO_ROUTE_FOUND_MSG='No route found';private $routes;private $error;private $baseNamespace;private $currentPrefix;private $service=null;public function __construct($error,$baseNamespace=''){$this->routes=[]; $this->error=$error;$this->baseNamespace=$baseNamespace==''?'':$baseNamespace.'\\';$this->currentPrefix='';}public function setService($service){$this->service=$service;}public function getService($service){return $this->service;}public function route($method,$regex,$handler){if($method=='*'){$method=['GET','PUT','DELETE','OPTIONS','TRACE','POST','HEAD'];}foreach((array)$method as $m){$this->addRoute($m,$regex,$handler);}return $this;}private function addRoute($method,$regex,$handler){$this->routes[strtoupper($method)][$this->currentPrefix.$regex]=[$handler,$this->service];}public function mount($prefix,callable $routes,$service=false){$previousPrefix=$this->currentPrefix;$this->currentPrefix=$previousPrefix.$prefix;if($service!==false){$previousService=$this->service;$this->service=$service;}$routes($this);$this->currentPrefix=$previousPrefix;if($service!==false){$this->service=$previousService;}return $this;}public function get($regex,$handler){$this->addRoute('GET',$regex,$handler);return $this;}public function post($regex,$handler){$this->addRoute('POST',$regex,$handler);return $this;}public function put($regex,$handler){$this->addRoute('PUT',$regex,$handler);return $this;}public function head($regex,$handler){$this->addRoute('HEAD',$regex,$handler);return $this;}public function delete($regex,$handler){$this->addRoute('DELETE',$regex,$handler);return $this;}public function options($regex,$handler){$this->addRoute('OPTIONS',$regex,$handler);return $this;}public function trace($regex,$handler){$this->addRoute('TRACE',$regex,$handler);return $this;}public function connect($regex,$handler){$this->addRoute('CONNECT',$regex,$handler);return $this;}public function dispatch($method,$path){if(!isset($this->routes[$method])){$params=[$method,$path,404,new HttpRequestException(self::NO_ROUTE_FOUND_MSG)];return $this->call($this->error,$this->service==null?$params:array_merge([$this->service],$params));}else{foreach($this->routes[$method]as $regex=>$route){$len=strlen($regex);if($len>0){$callback=$route[0];$service=isset($route[1])?$route[1]:null;if($regex[0]!='/')$regex='/'.$regex;if($len>1&&$regex[$len-1]=='/')$regex=substr($regex,0,-1);$regex=str_replace('@','\\@',$regex);if(preg_match('@^'.$regex.'$@',$path,$params)){array_shift($params);try{return $this->call($callback,$service==null?$params:array_merge([$service],$params));}catch(HttpRequestException $ex){$params=[$method,$path,$ex->getCode(),$ex];return $this->call($this->error,$this->service==null?$params:array_merge([$this->service],$params));}catch(Exception $ex){$params=[$method,$path,500,$ex];return $this->call($this->error,$this->service==null?$params:array_merge([$this->service],$params));}}}}}return $this->call($this->error,array_merge($this->service==null?[]:[$this->service],[$method,$path,404,new HttpRequestException(self::NO_ROUTE_FOUND_MSG)]));}private function call($callable,array $params=[]){if(is_string($callable)){if(strlen($callable)>0){if($callable[0]=='@'){$callable=$this->baseNamespace.substr($callable,1);}}else{throw new InvalidArgumentException('Route/error callable as string must not be empty.');}$callable=str_replace('.','\\',$callable);}if(is_array($callable)){if(count($callable)!==2)throw new InvalidArgumentException('Route/error callable as array must contain and contain only two strings.');if(strlen($callable[0])>0){if($callable[0][0]=='@'){$callable[0]=$this->baseNamespace.substr($callable[0],1);}}else{throw new InvalidArgumentException('Route/error callable as array must contain and contain only two strings.');}$callable[0]=str_replace('.','\\',$callable[0]);}return call_user_func_array($callable,$params);}public function dispatchGlobal(){$pos=strpos($_SERVER['REQUEST_URI'],'?');return $this->dispatch($_SERVER['REQUEST_METHOD'],'/'.trim(substr($pos!==false?substr($_SERVER['REQUEST_URI'],0,$pos):$_SERVER['REQUEST_URI'],strlen(implode('/',array_slice(explode('/',$_SERVER['SCRIPT_NAME']),0,-1)).'/')),'/'));}}class HttpRequestException extends Exception{}
 
-require "application/vendor/autoload.php";
-Sentry\init(['dsn' => 'https://f2d192f459554c9eb1d1965ab4f5f299@o537404.ingest.sentry.io/5655555' ]);
+error_reporting(E_ALL); // error reporting (debug)
+session_start();
+ini_set('display_errors', 'On'); // error showing (debug)
 
-// page loading function
-// if (ob_get_level() == 0) ob_start(); include "load.php"; ob_end_clean();
+// HEADERS
+header("Content-Type: application/json");
+header('Access-Control-Allow-Origin: *');
+header("X-Frame-Options: SAMEORIGIN");
 
-if (!file_exists(".htaccess")) {
-echo "<style>body{font-family:calibri;padding:0px;margin:25px}.alert{background:red}.box{height:24px;width:10%;position:relative:display:block}</style>";
-echo "The .htaccess file does not exist on main directory of your site.<br>";
-echo "If you can't see this file, you can create a new file named \".htaccess\" in the main directory of your site and you can add these codes to inside this file:<br>";
-echo "<pre>RewriteEngine On<br>";
-echo "<code>RewriteCond %{REQUEST_FILENAME} !-f<br>";
-echo "RewriteCond %{REQUEST_FILENAME} !-d<br>";
-echo "RewriteRule ^(.*)$ index.php?/$1 [L]</code>";
-echo "<br><br><br>";
-echo "<strong>If you have SSL installed use this code instead</strong><br><br>";
-echo "RewriteEngine on<br>";
-echo "DirectoryIndex load.php index.php<br>";
-echo "RewriteCond %{HTTPS} !=on<br>";
-echo "RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]<br>";
-echo "RewriteCond %{REQUEST_FILENAME} !-f<br>";
-echo "RewriteCond %{REQUEST_FILENAME} !-d <br>";
-echo "RewriteRule ^(.*)$ index.php/$1 [L]<br>";
-exit();
-}
-$php_version = explode('.', phpversion());
-if ($php_version[0] < 7) { include_once './assets/fix/php.php'; die(); }
+// file_put_contents("_REQUEST.log", print_r($_REQUEST, true));
 
-switch (ENVIRONMENT) {
-    case 'development':
-        error_reporting(-1);
-        ini_set('display_errors', 1);
-        break;
-    case 'testing':
-    case 'production':
-        ini_set('display_errors', 0);
-        if (version_compare(PHP_VERSION, '5.3', '>=')) {
-            error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT & ~E_USER_NOTICE & ~E_USER_DEPRECATED);
-        } else {
-            error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT & ~E_USER_NOTICE);
-        }
-        break;
-    default:
-        header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
-        echo 'The application environment is not set correctly.';
-        exit(1); // EXIT_ERROR
-}
+// AUTOLOAD
+include "../vendor/autoload.php";
 
-$system_path = 'system';
-$application_folder = 'application';
-$view_folder = '';
+// AUTOLOADER
+//use Medoo\Medoo;
+//use AppRouter\Router;
 
-// Set the current directory correctly for CLI requests
-if (defined('STDIN')) {
-    chdir(dirname(__FILE__));
-}
+// GET SERVER ROOT PATH
+$roots=(isset($_SERVER['HTTPS']) ? "https://" : "http://").$_SERVER['HTTP_HOST'];
+$roots.= str_replace(basename($_SERVER['SCRIPT_NAME']), '', $_SERVER['SCRIPT_NAME']);
+define('roots',$roots);
 
-if (($_temp = realpath($system_path)) !== FALSE) {
-    $system_path = $_temp . DIRECTORY_SEPARATOR;
-} else {
-    // Ensure there's a trailing slash
-    $system_path = strtr(
-        rtrim($system_path, '/\\'),
-        '/\\',
-        DIRECTORY_SEPARATOR . DIRECTORY_SEPARATOR
-    ) . DIRECTORY_SEPARATOR;
-}
+// CREATE ROOT PATH
+$root=(isset($_SERVER['HTTPS']) ? "https://" : "http://").$_SERVER['HTTP_HOST']; $root.= str_replace(basename($_SERVER['SCRIPT_NAME']), '', $_SERVER['SCRIPT_NAME']); define('root', $root);
 
-// Is the system path correct?
-if (!is_dir($system_path)) {
-    header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
-    echo 'Your system folder path does not appear to be set correctly. Please open the following file and correct this: ' . pathinfo(__FILE__, PATHINFO_BASENAME);
-    exit(3); // EXIT_CONFIG
-}
+// ======================== 404 PAGE
+$router = new Router(function ($method, $path, $statusCode, $exception) { http_response_code($statusCode);
+    $respose = array ( "status"=>"false", "message"=>"404 page not found", );
+    echo json_encode($respose);
+});
 
-// The name of THIS file
-define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
+// ======================== INDEX
+$router->get('/', function() {
+    include "config.php";
+    $respose = array ( "status"=>"true", "message"=>"Welcome to API server","database" => $db );
+    echo json_encode($respose);
+});
 
-// Path to the system directory
-define('BASEPATH', $system_path);
+// INCLUDE ROUTES
+include "./routes/App.php";
+include "./routes/Users.php";
+include "./routes/Settings.php";
+include "./routes/Hotels.php";
+include "./routes/Tours.php";
+include "./routes/Flights.php";
+include "./routes/Cars.php";
+include "./routes/Blogs.php";
+include "./routes/Global.php";
 
-// Path to the front controller (this file) directory
-define('FCPATH', dirname(__FILE__) . DIRECTORY_SEPARATOR);
+$router->dispatchGlobal();
 
-// Name of the "system" directory
-define('SYSDIR', basename(BASEPATH));
-
-// The path to the "application" directory
-if (is_dir($application_folder)) {
-    if (($_temp = realpath($application_folder)) !== FALSE) {
-        $application_folder = $_temp;
-    } else {
-        $application_folder = strtr(
-            rtrim($application_folder, '/\\'),
-            '/\\',
-            DIRECTORY_SEPARATOR . DIRECTORY_SEPARATOR
-        );
-    }
-} elseif (is_dir(BASEPATH . $application_folder . DIRECTORY_SEPARATOR)) {
-    $application_folder = BASEPATH . strtr(
-        trim($application_folder, '/\\'),
-        '/\\',
-        DIRECTORY_SEPARATOR . DIRECTORY_SEPARATOR
-    );
-} else {
-    header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
-    echo 'Your application folder path does not appear to be set correctly. Please open the following file and correct this: ' . SELF;
-    exit(3); // EXIT_CONFIG
-}
-
-define('APPPATH', $application_folder . DIRECTORY_SEPARATOR);
-
-// The path to the "views" directory
-if (!isset($view_folder[0]) && is_dir(APPPATH . 'views' . DIRECTORY_SEPARATOR)) {
-    $view_folder = APPPATH . 'views';
-} elseif (is_dir($view_folder)) {
-    if (($_temp = realpath($view_folder)) !== FALSE) {
-        $view_folder = $_temp;
-    } else {
-        $view_folder = strtr(
-            rtrim($view_folder, '/\\'),
-            '/\\',
-            DIRECTORY_SEPARATOR . DIRECTORY_SEPARATOR
-        );
-    }
-} elseif (is_dir(APPPATH . $view_folder . DIRECTORY_SEPARATOR)) {
-    $view_folder = APPPATH . strtr(
-        trim($view_folder, '/\\'),
-        '/\\',
-        DIRECTORY_SEPARATOR . DIRECTORY_SEPARATOR
-    );
-} else {
-    header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
-    echo 'Your view folder path does not appear to be set correctly. Please open the following file and correct this: ' . SELF;
-    exit(3); // EXIT_CONFIG
-}
-
-define('VIEWPATH', $view_folder . DIRECTORY_SEPARATOR);
-require_once BASEPATH . 'core/CodeIgniter.php';
+?>

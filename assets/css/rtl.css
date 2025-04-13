@@ -1,0 +1,145 @@
+/* GENERAL START  */
+
+/* TEXT DECORATION  */
+a {
+    text-decoration: none !important;
+}
+
+/* GENERAL END  */
+
+/* HEADER START  */
+
+/* RIGHT NAV LINKS  */
+.header_menu a {
+    line-height: 80px;
+}
+
+/* LEFT NAVLINKS  */
+/* @DROPDOWN  */
+.dropdown-toggle {
+    padding-inline: 16px !important;
+}
+#navbarSupportedContent .dropdown-toggle::after {
+    content: initial;
+}
+.dropdown-menu[data-bs-popper] {
+    left: initial;
+}
+
+/* HEADER END  */
+
+/* HERO START  */
+
+/* ALL SELECT2 */
+.select2-selection.select2-selection--single {
+    direction: ltr;
+}
+
+/* SELCT2 USER INPUT  */
+.select2-selection__rendered .mt-2.show.active {
+    text-align: right;
+}
+.select2-selection__rendered {
+    padding-right: 20px !important;
+    text-align: right !important;
+}
+
+/* SELECT2 DROPDOWN ICON  */
+.select2-selection__arrow {
+    left: initial !important;
+    z-index: 3;
+}
+
+/* ALL LOCATION ICONS  */
+.input-items.show .show.active,
+.input-items > div:first-of-type {
+    margin-inline-start: 12px;
+}
+
+/* TRAVELERS  */
+a.dropdown-btn {
+    text-decoration: none;
+}
+.dropdown-btn::after {
+    right: initial;
+    left: 20px;
+    border: initial;
+}
+.dropdown-item.active, .dropdown-item:active {
+    background-color: transparent;
+}
+
+/* FLIGHTS INPUT  */
+.flights_arrival> .show.active ,
+.from_flights > .show.active {
+    margin-inline-start: 12px;    
+}
+/* FLIGHTS SWAP BUTTON  */
+.swap-places {
+    margin-inline-start: -26px;
+}
+
+/* HERO END  */
+
+/* SLICK SLIDER START  */
+.slick-list.draggable {
+    direction: initial;
+}
+
+/* MODEL LOADING ANIMATION  */
+.loader-line-mask {
+    direction: initial;
+}
+
+/* SLICK SLIDER END  */
+
+
+/* FLIGHTS LIST PAGE START  */
+#flight--list-targets,
+.list.remove_duplication {
+    padding-right: unset;
+}
+
+/* CHECKBOX FILTER  */
+.oneway--checkbox-filter .form-check-label img {
+    margin-inline-start: 1.5em !important;
+}
+
+/* DOT INDICTOR  */
+
+.mix.all .py-2 > span {
+    left: unset;
+    right: 10px;
+}
+
+.flight--timeline::before {
+    left: unset;
+    right: 7px;
+}
+
+/* FLIGHTS LIST PAGE END  */
+
+/* BOKKING PAGE START  */
+.booking-detail-form.mb-2 .list-items > .list-items {
+    padding-right: unset !important;
+} 
+/* BOKKING PAGE END  */
+
+/* INVOICE PAGE START  */
+
+#invoice .d-flex.align-items-center span.position-relative {
+    margin-right: unset !important;
+}
+#invoice .d-flex.align-items-center span.me-4 {
+    margin-right: unset !important;
+}
+#invoice .mt-1.h6 {
+    margin-left: unset !important;
+    margin-right: 42px;
+}
+#invoice .invoice--time-line {
+    left: unset;
+    right: 7px;
+}
+
+/* INVOICE PAGE END  */

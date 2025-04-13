@@ -1,1 +1,16 @@
+Sitemap: /api/sitemap.xml
+
+User-Agent: PetalBot
+Disallow: /
+
+User-Agent: SentiBot
+Disallow: /
+
+User-Agent: magpie-crawler
+Disallow: /
+
+User-Agent: Bytespider
+Disallow: /
+
 User-Agent: *
+User-Agent: applebot
