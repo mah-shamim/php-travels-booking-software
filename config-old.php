@@ -7,7 +7,7 @@ define('api_url',$apiurl."/api/");                                           // 
 define('api_key',"phptravels");                                              // YOUR API KEY
 define('dev',"0");                                                           // USE 1 FOR DEV AND 0 FOR PRODUCTION
 define('gmkey', 'AIzaSyDk_iQ6QWOTHW-TWoXSFLwbcnhaxlcnXXk');                  // GOOGLE MAPS KEY
-$currency_key = '';                                                          // CURRENCY API KEY  https://currencylayer.com/signup/free
+$currency_key = '';                                                          // CURRENCY API KEY  https://currencylayer.com/signup/free  (AIzaSyDk_iQ6QWOTHW-TWoXSFLwbcnhaxlcnXXk)
 
 $active_group = 'default';
 $query_builder = TRUE;
