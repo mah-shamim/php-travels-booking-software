@@ -1,0 +1,2 @@
+<iframe src="http://flights.phptravels.net/flights?marker=99072&origin_iata=LHE&destination_iata=MED&depart_date=2019-10-15&return_date=&with_request=true&adults=1&children=0&infants=0&trip_class=0&locale=en&one_way=true&currency=usd&ct_guests=1+passenger&ct_rooms=1" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:110px;left:0px;right:0px;bottom:0px" height="100%" width="100%"></iframe>
+<style>.footer_bg,#footer,.flights-info-bar{display:none}</style>

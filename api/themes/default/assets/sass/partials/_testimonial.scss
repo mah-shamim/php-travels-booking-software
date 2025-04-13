@@ -1,0 +1,55 @@
+
+/*========= testimonial-card =========*/
+.testimonial-card {
+  @include border-radius(5px);
+  background-color: $white;
+  @include box-shadow(0 0 40px rgba(82, 85, 90, 0.05));
+  border: 1px solid rgba(128, 137, 150, 0.2);
+  padding: 25px 30px 30px 30px;
+  .testi-desc-box {
+    padding-bottom: 25px;
+  }
+  .testi__desc {
+    font-size: $display-31;
+    line-height: 30px;
+    font-weight: $font-weight-regular;
+  }
+  .rating-stars {
+    margin-top: -2px;
+  }
+}
+/*============ testimonial-carousel ===============*/
+.testimonial-carousel.carousel-action {
+  .owl-nav {
+    div {
+      width: 35px;
+      height: 35px;
+      line-height: 34px;
+    }
+  }
+}
+/*============ testimonial-area ===============*/
+.testimonial-area {
+  .section-heading {
+    @media #{$tab_device} {
+      margin-bottom: 50px;
+    }
+    @media #{$large_mobile} {
+      margin-bottom: 50px;
+    }
+    @media #{$small_mobile} {
+      margin-bottom: 50px;
+    }
+  }
+  .btn-box.padding-top-35px {
+    @media #{$tab_device} {
+      padding-top: 30px;
+    }
+    @media #{$large_mobile} {
+      padding-top: 30px;
+    }
+    @media #{$small_mobile} {
+      padding-top: 30px;
+    }
+  }
+}

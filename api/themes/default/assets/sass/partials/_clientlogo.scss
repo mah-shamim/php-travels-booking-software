@@ -1,0 +1,23 @@
+/*====================================================
+   clientlogo-area
+ ====================================================*/
+.client-logo-item {
+  display: inline-block;
+  @include transition(0.3s);
+  padding: 20px 20px;
+  img {
+    filter: grayscale(100%);
+    @include transition(0.3s);
+  }
+  &:hover {
+    img {
+      filter: grayscale(0);
+    }
+  }
+}
+
+.client-logo-item-2 {
+  img {
+    filter: grayscale(0);
+  }
+}

@@ -1,0 +1,255 @@
+/*
+Theme Name: Default
+Theme URI: http://www.phptravels.com/
+Description: Default Theme.
+Version: v8x
+Author: PHPTRAVELS
+Author URI: http://www.phptravels.com/
+Main Color : #064ce7 RGB rgb(6, 76, 231)
+*/
+
+/*============================================================================================*/
+/* Select2 */
+/*============================================================================================*/
+.select2-container{margin:0;position:relative;display:inline-block;zoom:1;*display:inline;vertical-align:middle}
+.select2-container,.select2-drop,.select2-search,.select2-search input{-webkit-box-sizing:border-box;box-sizing:border-box}
+.select2-container .select2-choice{display:block;overflow:hidden;position:relative;white-space:nowrap;line-height:26px;color:#444;text-decoration:none;-webkit-background-clip:padding-box;background-clip:padding-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;}
+.select2-container.select2-drop-above .select2-choice{border-bottom-color:#aaa;border-radius:1px}
+.select2-container.select2-allowclear .select2-choice .select2-chosen{margin-right:42px}
+.select2-container .select2-choice>.select2-chosen{ color: #0d233e; font-size: 14px;padding-top: 15px; height: 30px; float: left; padding-left: 0px; display: block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; width: auto; line-height: 0px; text-transform: capitalize;}
+.select2-container .select2-choice abbr{display:none;width:12px;height:12px;position:absolute;right:0px;top:4px;font-size:1px;text-decoration:none;border:0;background:url(../img/select2.png) right top no-repeat;cursor:pointer;outline:0;}
+.select2-container.select2-allowclear .select2-choice abbr{display:inline-block}
+.select2-container .select2-choice abbr:hover{background-position:right -11px;cursor:pointer}
+.select2-drop-mask{border:0;margin:0;padding:0;position:fixed;left:0;top:0;min-height:100%;min-width:100%;height:auto;width:auto;opacity:0;z-index:9998;background-color:#fff;filter:alpha(opacity=0)}
+.select2-drop{width:100%;margin-top:-60px;position:absolute;z-index:9999;top:100%;color:#000;border-top:0;height:50px;line-height:32px}
+.select2-drop.select2-drop-above{margin-top:1px;border-top:1px solid #aaa;border-bottom:0}
+.select2-drop-active{/*border:1px solid #7c7c7c;*/border-top:0}
+.select2-drop.select2-drop-above.select2-drop-active{border-top:1px solid #5897fb}
+.select2-drop-auto-width{border-top:1px solid #aaa;width:auto}
+.select2-drop-auto-width .select2-search{padding-top:4px}
+.select2-container .select2-choice .select2-arrow{display:inline-block;width:18px;height:100%;position:absolute;right:0;top:0}
+.select2-search{display:inline-block;width:100%;min-height:26px;margin:0;padding-left:1px;padding-right:1px;position:relative;z-index:10000;white-space:nowrap}
+.select2-search input { border: 1px solid #287dfa; font-size: 14px; letter-spacing: 1px; width: 100%; height: 50px !important; padding: 13px; margin-top: 10px; outline: 0; border-radius: 3px; -webkit-box-shadow: none; box-shadow: none; background: #fff url(../img/select2.png) no-repeat 100% -22px; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; -webkit-transition: all .3s; -moz-transition: all .3s; -ms-transition: all .3s; -o-transition: all .3s; transition: all .3s; }
+.select2-drop.select2-drop-above .select2-search input{margin-top:4px}
+.select2-search input.select2-active{background:#fff url(../img/select2-spinner.gif) no-repeat 100%}
+/*.select2-container-active .select2-choice,.select2-container-active .select2-choices{border:1px solid #5897fb;outline:0;-webkit-box-shadow:0 0 5px rgba(0,0,0,.3);box-shadow:0 0 5px rgba(0,0,0,.3)}*/
+.select2-dropdown-open .select2-choice{border-bottom-color:transparent;-webkit-box-shadow:0 1px 0 #fff inset;box-shadow:0 1px 0 #fff inset;border-bottom-left-radius:0;border-bottom-right-radius:0}
+.select2-dropdown-open.select2-drop-above .select2-choice,.select2-dropdown-open.select2-drop-above .select2-choices{border:1px solid #5897fb;border-top-color:transparent}
+.select2-dropdown-open .select2-choice .select2-arrow{background:transparent;border-left:none;-webkit-filter:none;filter:none}
+.select2-dropdown-open .select2-choice .select2-arrow b{background-position:-18px 1px}
+.select2-hidden-accessible{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}
+.select2-results{max-height: 250px;background: white; overflow-y: scroll; -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 50px 100px, rgba(0, 0, 0, 0.29) 0 5px 50px; box-shadow: rgba(0, 0, 0, 0.25) 0 50px 100px, rgba(0, 0, 0, 0.29) 0 5px 50px; };background:#efefef;max-height:200px;padding:0;margin:0;position:relative;overflow-x:hidden;overflow-y:auto;-webkit-tap-highlight-color:rgba(0,0,0,0);
+.select2-results ul.select2-result-sub{margin:0;padding-left:0}
+.select2-results ul.select2-result-sub>li .select2-result-label{padding-left:20px}
+.select2-results ul.select2-result-sub ul.select2-result-sub>li .select2-result-label{padding-left:40px}
+.select2-results ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub>li .select2-result-label{padding-left:60px}
+.select2-results ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub>li .select2-result-label{padding-left:80px}
+.select2-results ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub>li .select2-result-label{padding-left:100px}
+.select2-results ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub>li .select2-result-label{padding-left:110px}
+.select2-results ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub>li .select2-result-label{padding-left:120px}
+.select2-results li{list-style:none;display:list-item;background-image:none}
+.select2-results li.select2-result-with-children>.select2-result-label{ font-size: 12px;font-weight:700;background:#ebebeb;text-transform:uppercase;letter-spacing:1px}
+.select2-results .select2-result-label{font-size: 0.9rem;padding:10px 20px;margin:0;cursor:pointer;min-height:1em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.select2-results .select2-highlighted{background:#3875d7;color:#fff}
+.select2-results li em{background:#feffde;font-style:normal}
+.select2-results .select2-highlighted em{background:transparent}
+.select2-results .select2-highlighted ul{background:#fff;color:#000}
+.select2-results .select2-no-results,.select2-results .select2-searching,.select2-results .select2-selection-limit{background:#f4f4f4;display:list-item;padding-left:5px}
+.select2-results .select2-disabled.select2-highlighted{color:#666;background:#f4f4f4;display:list-item;cursor:default}
+.select2-results .select2-disabled{background:#f4f4f4;display:list-item;cursor:default}
+.select2-results .select2-selected{display:none}
+.select2-more-results.select2-active{background:#f4f4f4 url(../img/select2-spinner.gif) no-repeat 100%}
+.select2-more-results{background:#f4f4f4;display:list-item}
+.select2-container.select2-container-disabled .select2-choice{background-color:#f4f4f4;background-image:none;border:1px solid #ddd;cursor:default}
+.select2-container.select2-container-disabled .select2-choice .select2-arrow{background-color:#f4f4f4;background-image:none;border-left:0}
+.select2-container.select2-container-disabled .select2-choice abbr{display:none}
+.select2-container-multi .select2-choices{height:auto!important;height:1%;margin:0;padding:0;position:relative;border:1px solid #aaa;cursor:text;overflow:hidden;background-color:#fff}
+.select2-locked{padding:3px 5px 3px 5px!important}
+.select2-container-multi .select2-choices{min-height:26px}
+.select2-container-multi.select2-container-active .select2-choices{border:1px solid #5897fb;outline:0;-webkit-box-shadow:0 0 5px rgba(0,0,0,.3);box-shadow:0 0 5px rgba(0,0,0,.3)}
+.select2-container-multi .select2-choices li{float:left;list-style:none}
+html[dir="rtl"] .select2-container-multi .select2-choices li{float:right}
+.select2-container-multi .select2-choices .select2-search-field{margin:0;padding:0;white-space:nowrap}
+.select2-container-multi .select2-choices .select2-search-field input{padding:5px;margin:1px 0;font-family:sans-serif;font-size:100%;color:#666;outline:0;border:0;-webkit-box-shadow:none;box-shadow:none;background:transparent!important}
+.select2-container-multi .select2-choices .select2-search-field input.select2-active{background:#fff url(../img/select2-spinner.gif) no-repeat 100%!important}
+.select2-default{color:#999!important}
+.select2-container-multi .select2-choices .select2-search-choice{padding:3px 5px 3px 18px;margin:3px 0 3px 5px;position:relative;line-height:13px;color:#333;cursor:default;border:1px solid #aaa;border-radius:1px;-webkit-box-shadow:0 0 2px #fff inset,0 1px 0 rgba(0,0,0,.05));box-shadow:0 0 2px #fff inset,0 1px 0 rgba(0,0,0,.05));-webkit-background-clip:padding-box;background-clip:padding-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:#e4e4e4}
+html[dir="rtl"] .select2-container-multi .select2-choices .select2-search-choice{margin-left:0;margin-right:5px}
+.select2-container-multi .select2-choices .select2-search-choice .select2-chosen{cursor:default}
+.select2-container-multi .select2-choices .select2-search-choice-focus{background:#d4d4d4}
+.select2-search-choice-close{display:block;width:12px;height:13px;position:absolute;right:3px;top:4px;font-size:1px;outline:0;background:url(../img/select2.png) right top no-repeat}
+html[dir="rtl"] .select2-search-choice-close{right:auto;left:3px}
+.select2-container-multi .select2-search-choice-close{left:3px}
+.select2-container-multi .select2-choices .select2-search-choice .select2-search-choice-close:hover{background-position:right -11px}
+.select2-container-multi .select2-choices .select2-search-choice-focus .select2-search-choice-close{background-position:right -11px}
+.select2-container-multi.select2-container-disabled .select2-choices{background-color:#f4f4f4;background-image:none;border:1px solid #ddd;cursor:default}
+.select2-container-multi.select2-container-disabled .select2-choices .select2-search-choice{padding:3px 5px 3px 5px;border:1px solid #ddd;background-image:none;background-color:#f4f4f4}
+.select2-container-multi.select2-container-disabled .select2-choices .select2-search-choice .select2-search-choice-close{display:none;background:0}
+.select2-result-selectable .select2-match,.select2-result-unselectable .select2-match{text-decoration:underline;    font-weight: bold;}
+.select2-offscreen,.select2-offscreen:focus{clip:rect(0 0 0 0)!important;width:1px!important;height:1px!important;border:0!important;margin:0!important;padding:0!important;overflow:hidden!important;position:absolute!important;outline:0!important;left:0!important;top:0!important}
+.select2-display-none{display:none}
+.select2-measure-scrollbar{position:absolute;top:-10000px;left:-10000px;width:100px;height:100px;overflow:scroll}
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (-webkit-min-device-pixel-ratio:2),only screen and (min-resolution:2dppx){.select2-search input,.select2-search-choice-close,.select2-container .select2-choice abbr,.select2-container .select2-choice .select2-arrow b{background-image:url(../img/select2x2.png)!important;background-repeat:no-repeat!important;background-size:60px 40px!important}
+.select2-search input{background-position:100% -21px!important} } 
+.px-20{ padding-left: 20px; padding-right: 20px; }
+.select2-results { max-height: 365px; position: relative; overflow-x: hidden; overflow-y: auto; background-color: #ffffff; -webkit-tap-highlight-color: rgba(0,0,0,0); }
+
+/*============================================================================================*/
+/* Select2 */
+/*============================================================================================*/
+
+
+/* Cookies Law Style */
+.cc-window{opacity:1;transition:opacity 1s ease;}
+.cc-link{text-decoration:underline;}
+.cc-window{left:0;right:0;bottom:0px;position:fixed;overflow:hidden;box-sizing:border-box;font-size:16px;line-height:1.5em;display:-ms-flexbox;display:flex;-ms-flex-wrap:nowrap;flex-wrap:nowrap;z-index:9999;}
+.cc-window.cc-banner{padding:6px;width:100%;-ms-flex-direction:row;flex-direction:row;}
+.cc-btn,.cc-link{cursor:pointer;}
+.cc-link{opacity:.8;padding:.2em;}
+.cc-link:hover{opacity:1;} .cc-link:active,.cc-link:visited{color:initial;}
+.cc-btn{display:block;padding:.4em .8em;font-size:.9em;font-weight:700;border-width:2px;border-style:solid;text-align:center;white-space:nowrap;}
+.cc-window.cc-banner{-ms-flex-align:center;align-items:center;}
+.cc-banner .cc-message{display:block;-ms-flex:1 1 auto;flex:1 1 auto;max-width:100%;margin-right:1em;font-size: 14px; letter-spacing: 1px;a}
+.cc-compliance{margin-right: 2px;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-line-pack:justify;align-content:space-between;}
+@media print{
+.cc-window{display:none;} } @media screen and (max-width:900px){
+.cc-btn{white-space:normal;} } @media screen and (max-width:414px) and (orientation:portrait),screen and (max-width:736px) and (orientation:landscape){
+.cc-window.cc-top{top:0;}
+.cc-window.cc-banner{left:0;right:0;}
+.cc-window.cc-banner{-ms-flex-direction:column;flex-direction:column;}
+.cc-window.cc-banner .cc-compliance{-ms-flex:1 1 auto;flex:1 1 auto;}
+.cc-window .cc-message{margin-bottom:1em;}
+.cc-window.cc-banner{-ms-flex-align:unset;align-items:unset;}
+.cc-window.cc-banner .cc-message{margin-right:0;} }
+.cc-color-override--1961008818.cc-window{color:rgb(255, 255, 255);background-color:rgb(0, 0, 0);}
+.cc-color-override--1961008818 .cc-link,.cc-color-override--1961008818
+.cc-link:active,.cc-color-override--1961008818 .cc-link:visited{color:rgb(255, 255, 255);}
+.cc-color-override--1961008818 .cc-btn{color:rgb(0, 0, 0);border-color:transparent;background-color:rgb(241, 214, 0);padding:0px 16px}
+.cc-color-override--1961008818 .cc-btn:hover,.cc-color-override--1961008818
+.cc-btn:focus{background-color:rgb(255, 252, 38);}
+/* Cookies Law Style */
+
+/* Flights Listing Design */
+@media(min-width:992px){.row-eq-height{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:-webkit-box;display:-moz-box;display:-webkit-flex;display:-ms-flexbox;display:box;display:flex}
+}.theme-search-results-item{border:1px solid #e6e6e6;margin-bottom:-1px;-webkit-transition:.3s;-moz-transition:.3s;-o-transition:.3s;-ms-transition:.3s;transition:.3s;z-index:1;position:relative;background:#fff}
+.theme-search-results-item:hover{-webkit-box-shadow:0 2px 20px rgba(0,0,0,0.07);box-shadow:0 2px 20px rgba(0,0,0,0.07)}
+.theme-search-results-item-rounded{border-radius:3px}
+.theme-search-results-item-preview{padding:15px 15px;position:relative}
+.theme-search-results-item-mask-link{position:absolute;width:100%;height:100%;top:0;left:0;display:block;z-index:5}
+.theme-search-results-item-book{position:relative;height:100%;z-index:9999}
+.theme-search-results-item-extend{position:relative}
+.theme-search-results-item-extend-inner{padding:23px 27px;padding-top:30px;background: #deeeff;}
+.theme-search-results-item-extend-close{position:absolute;top:8px;right:0;text-align:center;display:block;padding:0 23px;color:#000000;-ms-filter:"alpha(opacity=50)";filter:alpha(opacity=50);font-family:Arial,Baskrville,monospace}
+.theme-search-results-item-extend-close:hover{text-decoration:none;color:#595959;opacity:1;-ms-filter:none;filter:none}
+.theme-search-results-item-price{text-align:center;margin-bottom:10px}
+.theme-search-results-item-price-tag{font-family:'Roboto',helvetica,Arial,sans-serif;font-size:22px;margin-bottom:0;line-height:1em}
+.theme-search-results-item-price-sign{font-size:10px;color:#b3b3b3;margin-bottom:0;margin-top:2px}
+.theme-search-results-item-price-btn{padding:7px 0;border-radius:2px;font-weight:700;font-size:11px;position:relative;z-index:10}
+.theme-search-results-item-flight-sections .theme-search-results-item-flight-section{margin-bottom:20px;padding-bottom:20px;border-bottom:1px dashed #e6e6e6}
+@media(min-width:992px){.theme-search-results-item-flight-sections .theme-search-results-item-flight-section:last-child{margin-bottom:0;padding-bottom:0;border:0}
+}.theme-search-results-item-flight-section-airline-logo-wrap{position:relative;height:100%}
+.theme-search-results-item-flight-section-airline-logo{display:block;max-width:67%;max-height:50px;top:50%;left:50%;position:absolute;-webkit-transform:translate3d(-50%,-50%,0);-moz-transform:translate3d(-50%,-50%,0);-o-transform:translate3d(-50%,-50%,0);-ms-transform:translate3d(-50%,-50%,0);transform:translate3d(-50%,-50%,0)}
+@media(max-width:992px){.theme-search-results-item-flight-section-airline-logo{position:relative;width:50px;max-height:none;margin-right:auto;margin-left:auto;margin-bottom:20px;top:0;left:0;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+}@media(max-width:992px){.theme-search-results-item-flight-section-meta{display:table;margin:0 auto;margin-bottom:20px}
+.theme-search-results-item-flight-section-meta>p{display:inline-block;margin:0 7px}
+}.theme-search-results-item-flight-section-item{padding:0 15px}
+.theme-search-results-item-flight-section-airline-title{font-family:helvetica,Arial,sans-serif;font-size:10px;font-weight:400;opacity:.4;-ms-filter:"alpha(opacity=40)";filter:alpha(opacity=40);margin-bottom:0;margin-top:15px}
+@media(max-width:992px){.theme-search-results-item-flight-section-airline-title{text-align:center;margin-top:10px;font-size:12px;opacity:.65;-ms-filter:"alpha(opacity=65)";filter:alpha(opacity=65)}
+}.theme-search-results-item-flight-section-meta-time{font-size:17px;font-weight:700;margin-bottom:6px;line-height:1em;text-transform:uppercase}
+.theme-search-results-item-flight-section-meta-time>span{font-weight:400;font-size:10px;margin-left:2px;opacity:.65;-ms-filter:"alpha(opacity=65)";filter:alpha(opacity=65);line-height:1em}
+.theme-search-results-item-flight-section-meta-city{text-overflow: ellipsis; overflow: hidden; width: 120px; height: 2.2em; white-space: nowrap;font-size:13px;opacity:.65;-ms-filter:"alpha(opacity=65)";filter:alpha(opacity=65);margin-bottom:2px}
+.theme-search-results-item-flight-section-meta-date{font-size:10px;opacity:.65;-ms-filter:"alpha(opacity=65)";filter:alpha(opacity=65);margin-bottom:0}
+.theme-search-results-item-flight-section-path{position:relative;height:60px;margin:0 5px}
+@media(max-width:992px){.theme-search-results-item-flight-section-path{margin-bottom:20px}
+}
+.theme-search-results-item-flight-section-path-line{position:absolute;top:30px;left:0;width:100%;height:2px;background:#dedede}
+.theme-search-results-item-flight-section-path-icon{color: #000; font-size: 20px;margin-bottom:9px;opacity:.5;-ms-filter:"alpha(opacity=50)";filter:alpha(opacity=50);-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;backface-visibility:hidden}
+.theme-search-results-item-flight-section-path-line-start,.theme-search-results-item-flight-section-path-line-end,.theme-search-results-item-flight-section-path-line-middle,.theme-search-results-item-flight-section-path-line-middle-1,.theme-search-results-item-flight-section-path-line-middle-2{position:absolute;left:-15px;text-align:center;width:30px}
+.theme-search-results-item-flight-section-path-line-end{right:-15px;left:auto}
+/*.theme-search-results-item-flight-section-path-line-end .theme-search-results-item-flight-section-path-icon{-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-o-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}*/
+.theme-search-results-item-flight-section-path-line-middle,.theme-search-results-item-flight-section-path-line-middle-1,.theme-search-results-item-flight-section-path-line-middle-2{left:50%;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-o-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}
+.theme-search-results-item-flight-section-path-line-middle .theme-search-results-item-flight-section-path-line-dot,.theme-search-results-item-flight-section-path-line-middle-1 .theme-search-results-item-flight-section-path-line-dot,.theme-search-results-item-flight-section-path-line-middle-2 .theme-search-results-item-flight-section-path-line-dot{background:#999}
+.theme-search-results-item-flight-section-path-line-middle .theme-search-results-item-flight-section-path-icon,.theme-search-results-item-flight-section-path-line-middle-1 .theme-search-results-item-flight-section-path-icon,.theme-search-results-item-flight-section-path-line-middle-2 .theme-search-results-item-flight-section-path-icon{visibility:hidden}
+.theme-search-results-item-flight-section-path-line-middle-1{left:33%;-webkit-transform:traslateX(-33%);-moz-transform:traslateX(-33%);-o-transform:traslateX(-33%);-ms-transform:traslateX(-33%);transform:traslateX(-33%)}
+.theme-search-results-item-flight-section-path-line-middle-2{left:66%;transfrom:translateX(-66%)}
+.theme-search-results-item-flight-section-path-line-dot{width:8px;height:8px;border-radius:50%;background-color:#287dfa;margin-top:-3px;margin-bottom:10px;margin-left:10px;-webkit-box-shadow:0 0 0 2px #fff;box-shadow:0 0 0 2px #fff}
+.theme-search-results-item-flight-section-path-line-title{font-size:9px;opacity:.65;-ms-filter:"alpha(opacity=65)";filter:alpha(opacity=65)}
+.theme-search-results-item-flight-section-path-fly-time{text-align:center;width:100%;position:absolute;top:0;left:0}
+.theme-search-results-item-flight-section-path-fly-time>p{font-size:12px;opacity:.65;-ms-filter:"alpha(opacity=65)";filter:alpha(opacity=65)}
+.theme-search-results-item-flight-detail-items .theme-search-results-item-flight-details{margin-bottom:30px}
+.theme-search-results-item-flight-detail-items .theme-search-results-item-flight-details:last-child{margin-bottom:0}
+@media(max-width:992px){.theme-search-results-item-flight-details-info{margin-bottom:15px}
+}.theme-search-results-item-flight-details-info-title{text-transform:uppercase;letter-spacing:1.5px;font-size:10px;color:#999;margin-top:0;margin-bottom:7px}
+.theme-search-results-item-flight-details-info-date{font-weight:bold;font-size:16px;margin-bottom:3px;line-height:1em}
+.theme-search-results-item-flight-details-info-cities{font-size:10px;opacity:.65;-ms-filter:"alpha(opacity=65)";filter:alpha(opacity=65);margin-bottom:10px}
+.theme-search-results-item-flight-details-info-fly-time{font-size:16px;opacity:.7;-ms-filter:"alpha(opacity=70)";filter:alpha(opacity=70);margin-bottom:0}
+.theme-search-results-item-flight-details-info-stops{font-size:12px;margin-bottom:0;opacity:.4;-ms-filter:"alpha(opacity=40)";filter:alpha(opacity=40)}
+.theme-search-results-item-flight-details-schedule-list{list-style:none;margin:0;padding-left:30px;position:relative}
+.theme-search-results-item-flight-details-schedule-list:before{content:'';width:2px;height:100%;background-color:#d9d9d9;top:0;left:0;position:absolute}
+.theme-search-results-item-flight-details-schedule-list>li{margin-bottom:30px;position:relative}
+.theme-search-results-item-flight-details-schedule-list>li:last-child{margin-bottom:0}
+.theme-search-results-item-flight-details-schedule-icon{position:absolute;top:16px;left:-42px;width:26px;height:26px;line-height:26px;text-align:center;background-color:#fff;-webkit-box-shadow:0 0 0 1px #d9d9d9;box-shadow:0 0 0 1px #d9d9d9;color:#0093d2;border-radius:50%;display:block;font-size:12px}
+.theme-search-results-item-flight-details-schedule-icon.fa-plane{-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg)}
+.theme-search-results-item-flight-details-schedule-icon.fa-plane:before{-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;backface-visibility:hidden;position:relative;top:1px;margin-left:-1px}
+.theme-search-results-item-flight-details-schedule-dots{position:absolute;top:29px;left:0;width:100%;border-top:2px dotted #000;opacity:.1;-ms-filter:"alpha(opacity=10)";filter:alpha(opacity=10)}
+.theme-search-results-item-flight-details-schedule-date{font-size:10px;margin-bottom:7px;opacity:.65;-ms-filter:"alpha(opacity=65)";filter:alpha(opacity=65)}
+.theme-search-results-item-flight-details-schedule-time{font-size:16px;margin-bottom:7px;line-height:1em;background: #deeeff;;position:relative;display:table;z-index:2;padding-right:10px}
+.theme-search-results-item-flight-details-schedule-time-item{font-weight:bold;text-transform:uppercase}
+.theme-search-results-item-flight-details-schedule-time-item>span{font-weight:normal;font-size:10px;margin-left:1.5px}
+.theme-search-results-item-flight-details-schedule-time-separator{padding:0 6px;opacity:.3;-ms-filter:"alpha(opacity=30)";filter:alpha(opacity=30)}
+.theme-search-results-item-flight-details-schedule-fly-time{position:absolute;top:20px;right:0;font-size:12px;color:#999;background: #deeeff;padding-left:10px;z-index:2}
+.theme-search-results-item-flight-details-schedule-destination{margin-bottom:10px;overflow:hidden}
+.theme-search-results-item-flight-details-schedule-destination-item,.theme-search-results-item-flight-details-schedule-destination-separator{float:left}
+.theme-search-results-item-flight-details-schedule-destination-separator{margin:0 10px}
+.theme-search-results-item-flight-details-schedule-destination-separator>span{opacity:.5;-ms-filter:"alpha(opacity=50)";filter:alpha(opacity=50);display:block;line-height:1em}
+.theme-search-results-item-flight-details-schedule-destination-title{font-size:12px;margin-bottom:0}
+.theme-search-results-item-flight-details-schedule-destination-city{font-size:10px;opacity:.5;-ms-filter:"alpha(opacity=50)";filter:alpha(opacity=50);margin-bottom:0}
+.theme-search-results-item-flight-details-schedule-features{font-size:12px;list-style:none;padding:0;margin:0;opacity:.5;-ms-filter:"alpha(opacity=50)";filter:alpha(opacity=50)}
+.theme-search-results-item-flight-details-schedule-features>li{display:inline-block;margin-right:10px}
+._mb-10{margin-bottom:10px!important}
+.content-wrapper .heading-title { font-size: 20px !important; }
+.landing{-webkit-transform:rotate(40deg)!important;-moz-transform:rotate(40deg)!important;-o-transform:rotate(40deg)!important;-ms-transform:rotate(40deg)!important;transform:rotate(40deg)!important}
+.takeoff{-webkit-transform:rotate(-40deg)!important;-moz-transform:rotate(-40deg)!important;-o-transform:rotate(-40deg)!important;-ms-transform:rotate(-40deg)!important;transform:rotate(-40deg)!important}
+}
+/* Flights Listing Design */
+
+/* Availability Calendar */
+.calendar-legend { margin: 0 0 10px; text-align: left; }
+.calendar-legend .calendar-key { display: inline-block; line-height: 21px; height: 21px; width: 23px; position: relative; }
+.calendar-legend .available-key { background-color: #fff; }
+.calendar-legend .calendar-key-box { height: 21px; width: 23px; position: absolute; top: 4px; left: 0; border: 1px solid #dbdbdb; }
+.calendar-legend .calendar-key { display: inline-block; line-height: 21px; height: 21px; width: 23px; position: relative; }
+ dt { font-weight: 700; }
+.calendar-legend .calendar-label { margin: 0 30px 0 5px; }
+.calendar-legend dt, .calendar-legend dd { display: inline-block; }
+.calendar-legend .blocked-key { background-color: #FF9494; text-decoration: line-through; }
+.today { background-color: #8AB1FF; border-radius: 0px !important; color: #fff; padding: 3px; }
+.calendar-legend .today { background-color: #8AB1FF; }
+.notavailable{ background-color: #FF9494; text-decoration: line-through; }
+.availability-table { width: 30% !important; margin-top: 15px !important;padding:10px;border: solid 1px #F5F5F5;width: 31%;margin-left: 1%;margin-right: 1%;height: 250px; margin-top:2% }
+
+/* Loading Spiner */
+#rotatingDiv { display: block; margin: 16px auto; height: 50px; width: 50px; -webkit-animation: rotation .9s infinite linear; -moz-animation: rotation .9s infinite linear; -o-animation: rotation .9s infinite linear; animation: rotation .9s infinite linear; border-left: 8px solid rgba(0,0,0,.20); border-right: 8px solid rgba(0,0,0,.20); border-bottom: 8px solid rgba(0,0,0,.20); border-top: 8px solid rgba(33,128,192,1); border-radius: 100%; } @keyframes rotation { from { transform: rotate(0deg); } to { transform: rotate(359deg); } } @-webkit-keyframes rotation { from { -webkit-transform: rotate(0deg); } to { -webkit-transform: rotate(359deg); } } @-moz-keyframes rotation { from { -moz-transform: rotate(0deg); } to { -moz-transform: rotate(359deg); } } @-o-keyframes rotation { from { -o-transform: rotate(0deg); } to { -o-transform: rotate(359deg); } }
+.rotatingDiv { display: block; margin: 16px auto; height: 50px; width: 50px; -webkit-animation: rotation .9s infinite linear; -moz-animation: rotation .9s infinite linear; -o-animation: rotation .9s infinite linear; animation: rotation .9s infinite linear; border-left: 8px solid rgba(0,0,0,.20); border-right: 8px solid rgba(0,0,0,.20); border-bottom: 8px solid rgba(0,0,0,.20); border-top: 8px solid rgba(33,128,192,1); border-radius: 100%; } @keyframes rotation { from { transform: rotate(0deg); } to { transform: rotate(359deg); } } @-webkit-keyframes rotation { from { -webkit-transform: rotate(0deg); } to { -webkit-transform: rotate(359deg); } } @-moz-keyframes rotation { from { -moz-transform: rotate(0deg); } to { -moz-transform: rotate(359deg); } } @-o-keyframes rotation { from { -o-transform: rotate(0deg); } to { -o-transform: rotate(359deg); } }
+
+.matrialprogress{position:relative;height:10px;display:block;width:100%;background-color:#bfc1ce;border-radius:2px;background-clip:padding-box;margin:.5rem 0 1rem 0;overflow:hidden}
+.matrialprogress .determinate{position:absolute;background-color:inherit;top:0;bottom:0;background-color:#3f51b5;transition:width .3s linear}
+.matrialprogress .indeterminate{background-color:#3f51b5}
+.matrialprogress .indeterminate:before{content:'';position:absolute;background-color:inherit;top:0;left:0;bottom:0;will-change:left,right;-webkit-animation:indeterminate 2.1s cubic-bezier(0.65,0.815,0.735,0.395) infinite;animation:indeterminate 2.1s cubic-bezier(0.65,0.815,0.735,0.395) infinite}
+.matrialprogress .indeterminate:after{content:'';position:absolute;background-color:inherit;top:0;left:0;bottom:0;will-change:left,right;-webkit-animation:indeterminate-short 2.1s cubic-bezier(0.165,0.84,0.44,1) infinite;animation:indeterminate-short 2.1s cubic-bezier(0.165,0.84,0.44,1) infinite;-webkit-animation-delay:1.15s;animation-delay:1.15s}
+@-webkit-keyframes indeterminate{0%{left:-35%;right:100%}
+60%{left:100%;right:-90%}
+100%{left:100%;right:-90%}
+}@keyframes indeterminate{0%{left:-35%;right:100%}
+60%{left:100%;right:-90%}
+100%{left:100%;right:-90%}
+}@-webkit-keyframes indeterminate-short{0%{left:-200%;right:100%}
+60%{left:107%;right:-8%}
+100%{left:107%;right:-8%}
+}@keyframes indeterminate-short{0%{left:-200%;right:100%}
+60%{left:107%;right:-8%}
+100%{left:107%;right:-8%}
+}
+
+th{text-align:center}
+.dropdown-item { padding: .25rem 1rem; }

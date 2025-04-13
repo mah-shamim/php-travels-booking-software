@@ -1,0 +1,60 @@
+/*==== icon-element ======*/
+.icon-element {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $theme-color-2;
+  @include border-radius(50%);
+  position: relative;
+  font-size: $display-23;
+  color: $white;
+}
+.icon-element-2 {
+  display: inline-block;
+  font-size: $display-10;
+  color: $theme-color;
+  width: 80px;
+  height: 80px;
+  line-height: 77px;
+  text-align: center;
+  border: 2px solid $theme-color;
+  @include border-radius(50%);
+  @include transition(0.3s);
+  position: relative;
+  @media #{$small_mobile_four} {
+    width: 70px;
+    height: 70px;
+    line-height: 67px;
+  }
+  &:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    background-color: $white;
+    @include border-radius(50%);
+  }
+  &:hover {
+    background-color: $theme-color-2;
+    color: $white;
+    border-color: $theme-color-2;
+  }
+}
+
+/*==== mark-as-read-btn ======*/
+.mark-as-read-btn {
+  background-color: rgba(128, 137, 150, 0.1);
+  @include border-radius(5px);
+  color: $theme-color-4;
+  border: none;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  font-size: $display-28;
+}

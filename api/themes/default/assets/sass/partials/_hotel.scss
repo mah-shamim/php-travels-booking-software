@@ -1,0 +1,187 @@
+/*======== hotel-area =========*/
+.hotel-area.padding-right-100px {
+  @media #{$extra-device} {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+/*======== room-type-content =========*/
+.room-type-content {
+  overflow: hidden;
+  @include border-radius(4px);
+  margin-bottom: 30px;
+  .image-box {
+    img {
+      @include transition(0.3s);
+    }
+    a {
+      &:hover {
+        img {
+          @include transform(scale(1.03));
+        }
+        .room-type-link {
+          right: 30px;
+        }
+      }
+    }
+  }
+}
+/*======== room-type-link =========*/
+.room-type-link {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  background-color: $white;
+  color: $theme-color;
+  @include border-radius(4px);
+  padding: 15px 30px;
+  text-transform: uppercase;
+  font-size: $display-31;
+  @include transition(0.3s);
+  &:hover {
+    background-color: $theme-color-2;
+    color: $white;
+  }
+}
+
+/*======= hotel-card-carousel ========*/
+.hotel-card-carousel{
+  .owl-stage-outer {
+    overflow: inherit;
+    .owl-item:not(.active) {
+      .card-item {
+        &::before {
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(255, 255, 255, 0.8);
+          @include border-radius(5px);
+          z-index: 1;
+        }
+        &:hover {
+          @include transform(translateY(0));
+        }
+      }
+    }
+  }
+}
+
+/*======= hotel-card-carousel-2 ========*/
+.hotel-card-carousel-2 {
+  .card-item {
+    margin-bottom: 0;
+    .card-img {
+      .badge {
+        top: 20px;
+      }
+    }
+  }
+}
+
+/*===== discount-area ======*/
+.discount-area {
+  margin-top: -100px;
+}
+
+/*===== discount-box ======*/
+.discount-box {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $theme-color;
+    opacity: 0.3;
+    @include border-radius(5px);
+  }
+}
+
+.company-logo,
+.discount-content {
+  position: absolute;
+}
+
+.discount-img {
+  img {
+    width: 100%;
+    @include border-radius(5px);
+    @media #{$tab_device} {
+      object-fit: cover;
+      height: 250px;
+    }
+    @media #{$large_mobile} {
+      object-fit: cover;
+      height: 250px;
+    }
+    @media #{$small_mobile} {
+      object-fit: cover;
+      height: 250px;
+    }
+    @media #{$small_mobile_two} {
+      height: 280px;
+    }
+  }
+}
+
+.discount-content {
+  top: 50%;
+  left: 100px;
+  @include transform(translateY(-50%));
+  @media #{$tab_device} {
+    left: 30px;
+  }
+  @media #{$large_mobile} {
+    left: 30px;
+  }
+  @media #{$small_mobile} {
+    left: 30px;
+  }
+  @media #{$small_mobile_five} {
+    left: 20px;
+  }
+  @media #{$small_mobile_two} {
+    top: 20px;
+    @include transform(translateY(0));
+  }
+  .section-heading {
+    .sec__title {
+      @media #{$tab_device} {
+        font-size: $display-24;
+        line-height: 30px !important;
+      }
+      @media #{$large_mobile} {
+        font-size: $display-24;
+        line-height: 30px !important;
+      }
+      @media #{$small_mobile} {
+        font-size: $display-24;
+        line-height: 30px !important;
+      }
+    }
+  }
+}
+/* company-logo */
+.company-logo {
+  bottom: 20px;
+  right: 20px;
+}
+/* total-price */
+.total-price {
+  label {
+
+  }
+  input {
+    border: none;
+    background-color: transparent;
+    font-weight: $font-weight-bold;
+    font-size: $display-28;
+    color: $theme-color;
+    width: 68px;
+  }
+}

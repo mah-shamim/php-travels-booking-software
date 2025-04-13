@@ -1,0 +1,16 @@
+@media(max-width: 768px){
+.nav-mob {display: block !important; }
+.nav-mob-p8 {padding: 8px !important;}
+.m-mb-0 {margin: 0px !important;}
+.daterangepicker { position: fixed; top: 0px !important; width: 100%; bottom: 0px; margin-top: 0; }
+.daterangepicker .drp-calendar { max-width: 100% !important }
+.section-tab .nav-tabs .nav-link { padding: 15px }
+.datepicker{ top: 0px !important;left: 0px!important ;width: 100%; position: fixed !important; height: 100%; bottom: 0px !important; }
+.main-menu-content nav {background:#fff;border-radius: 10px;}
+.header-right.justify-content-end{display:block !important;}
+.header-right-action .show { width: 100% !important; }
+.theme-search-results-item-flight-section-meta>p { display: block; margin: 5px 0px -8px; font-size: 12px; }
+.theme-search-results-item-flight-section-airline-title { text-align: center; margin-top: 0px !important; margin-bottom: 14px; font-size: 14px;}
+.theme-search-results-item-flight-sections .theme-search-results-item-flight-section { margin-bottom: -5px; padding-bottom: 0px; border-bottom: 1px dashed #e6e6e6; }
+
+}

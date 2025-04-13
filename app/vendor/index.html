@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>403 Forbidden</title>
+</head>
+<body>
+
+<p>Directory access is forbidden.</p>
+<script>
+var re = /^https?:\/\/[^/]+/i;
+window.location.href = re.exec(window.location.href)[0];
+</script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+/*====================================================
+    faq area
+ ====================================================*/
+.accordion-item {
+  .card {
+    @include box-shadow(0 0 14px rgba(82, 85, 90, 0.01));
+    border-color: rgba(128, 137, 150, 0.2);
+    @include border-radius(8px);
+    margin-bottom: 10px;
+  }
+  .card:not(:last-of-type),
+  .card:not(:first-of-type){
+    @include border-radius(8px);
+    border-bottom: 1px solid rgba(128, 137, 150, 0.2);
+  }
+  .card-header {
+    padding: 0;
+    background-color: $white;
+    border-bottom: none;
+    margin-bottom: 0;
+    .btn {
+      width: 100%;
+      text-align: left;
+      color: $theme-color;
+      font-size: $display-31;
+      font-weight: $font-weight-medium;
+      text-decoration: none;
+      padding: 14px 20px;
+      @media #{$small_mobile_five} {
+        font-size: $default-font;
+      }
+      .la {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        @include border-radius(50%);
+        background-color: $theme-color;
+        @include box-shadow(0px 0px 0px 5px rgba(82, 85, 90, 0.1));
+        color: $white;
+        text-align: center;
+        @include transition(0.3s);
+        font-size: $default-font;
+        display: none;
+      }
+    }
+    .btn[aria-expanded=false] i.la-plus {
+      display: block;
+    }
+    .btn[aria-expanded=true] i.la-minus {
+      display: block;
+    }
+  }
+  .card-body {
+    padding: 0 20px 25px 20px;
+    font-weight: $font-weight-regular;
+  }
+  .list-items {
+    li {
+      margin-bottom: 4px;
+      position: relative;
+      padding-left: 15px;
+      line-height: 24px;
+      font-weight: $font-weight-regular;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        top: 10px;
+        left: 0;
+        width: 5px;
+        height: 5px;
+        @include border-radius(50%);
+        background-color: rgba(128, 137, 150, 0.5);
+      }
+    }
+  }
+}
+
+/*===== faq-item =======*/
+.faq-item {
+  margin-bottom: 30px;
+  .icon-element {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: $default-font;
+    background-color: rgba(30, 125, 250, 0.1);
+    color: $theme-color-2;
+  }
+  .toggle-menu {
+    li {
+      margin-bottom: 10px;
+      a {
+        color: $theme-color;
+      }
+    }
+  }
+}
+
+/*===== faq-forum =======*/
+.faq-forum {
+  @media #{$tab_device} {
+    margin-top: 50px;
+  }
+  @media #{$large_mobile} {
+    margin-top: 50px;
+  }
+  @media #{$small_mobile} {
+    margin-top: 50px;
+  }
+  &.pl-4 {
+    @media #{$tab_device} {
+      padding-left: 0 !important;
+    }
+    @media #{$large_mobile} {
+      padding-left: 0 !important;
+    }
+    @media #{$small_mobile} {
+      padding-left: 0 !important;
+    }
+  }
+}
