@@ -1,0 +1,19 @@
+/* ADMIN SIDE MENU START  */
+
+.nav.nav-pills > li.mb-0 button::before,
+.nav.nav-pills > li.mb-0 a::before {
+  left: unset;
+  width: unset;
+} 
+
+.nav.nav-pills > li.mb-0 button svg,
+.nav.nav-pills > li.mb-0 a svg {
+  margin-left: unset !important;
+}
+
+/* @LOGIN  */
+.dropdown.p-2.mx-2 > #dropdownUser1 {
+  justify-content: space-between;
+}
+
+/* ADMIN SIDE MENU END  */
