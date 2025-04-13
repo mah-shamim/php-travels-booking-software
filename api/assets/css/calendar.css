@@ -1,0 +1,43 @@
+/* --- CALENDAR ------------------------------------------------------------- */
+#calendar {	Z-INDEX: 999; POSITION: absolute; PADDING-BOTTOM: 4px; PADDING-LEFT: 0px; PADDING-RIGHT: 4px; DISPLAY: none; PADDING-TOP: 0px}
+
+A IMG 				  { border-bottom: medium none; border-left: medium none; border-top: medium none; border-right: medium none; }
+A.calendar IMG 		  { background-color: #666633; display: inline; margin:0px 2px -4px 2px; }
+A.calendar:hover IMG  { background-color: #feba02}
+A.calendar:active IMG { background-color: #b30000}
+
+/* --- TABLE ---------------------------------------------------------------- */
+.caltable 			{ border:#6699cc 1px solid; background-color: #f2f8fd;}
+.caltable A:link    { color: #6699cc !important}
+.caltable A:visited { color: #6699cc !important}
+.caltable A:hover   { border: 1px solid #cccccc !important; }
+.caltable A.calPrevMonth:hover   { border: 0px solid #cccccc !important; }
+.caltable A.calNextMonth:hover   { border: 0px solid #cccccc !important; }
+.caltable A.calCloseLink:hover   { border: 0px solid #cccccc !important; }
+.caltable A:active  { border: 1px solid #cccccc !important; }
+.caltable TD 		{ text-align: center}
+.caltable TD A 		{ display: block; text-decoration: none}
+.caltable TD.calheader A {	display: inline; vertical-align: -0.4em}
+.calheader 			{ padding-bottom: 0.4em; padding-left:0em; padding-right:0em; white-space: nowrap; padding-top: 0.4em}
+.calheader SELECT 	{ margin: 0px 0.6em}
+
+/* --- DAYS ----------------------------------------------------------------- */
+.monthyear 			{ background-color: #fff; color: white}
+.daynames TD 		{ border-bottom: #003580 1px solid; background-color: #f2f8fd; }
+.days TD 			{ width:25px; height:24px; border: #f2f8fd 2px solid; padding:0.1em; background-color: #f2f8fd;}
+.days TD.weekend 	{ border-color: #f2f8fd; background-color: #f2f8fd; }
+.days TD.past 		{ color: #cdcdcd}
+.days TD.today 		{ border-bottom: medium none; border-left: medium none; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-top: medium none; border-right: medium none; padding-top: 0px}
+.days TD.future 	{ border-bottom: medium none; border-left: medium none; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-top: medium none; border-right: medium none; padding-top: 0px}
+.days TD A 			{ border: #f2f8fd 2px solid; }
+.days TD.weekend A 	{ border-color: #f2f8fd; }
+.days TD.today a 	{ background-color: #dBe3eB; }
+.days TD.selected	{ font-weight: bold}
+.days TD.selected A { border: 1px solid #a90000; }
+
+.calPrevMonth       { border:0px; }
+.calNextMonth       { border:0px; }
+.calCloseLink       { border:0px; }
+
+.ym_month           { width:135px; border:1px solid #6699cc; margin:0px; padding:0px; }
+

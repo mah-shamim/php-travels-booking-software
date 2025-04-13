@@ -1,0 +1,375 @@
+/*====================================================
+    contact-form-action
+ ====================================================*/
+.label-text {
+  font-size: $default-font-3;
+  color: $theme-color;
+}
+.contact-form-action {
+  .form-group {
+    position: relative;
+    .form-icon {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      color: $theme-color-4;
+      font-size: $display-30;
+    }
+    .search-btn,
+    .submit-btn {
+      position: absolute;
+      top: 7px;
+      right: 8px;
+    }
+    .search-btn {
+      background-color: transparent;
+      border: none;
+      padding: 3px 10px;
+      @include transition(0.3s);
+      color: $theme-color;
+      &:hover {
+        color: $theme-color-2;
+      }
+    }
+  }
+  .form-control {
+    height: auto;
+    line-height: inherit;
+    padding: 10px 20px 10px 40px;
+    font-size: $default-font-4;
+    color: $theme-color;
+    border-color: rgba(128, 137, 150, 0.2);
+    @include box-shadow(none);
+    @include transition(0.3s);
+    background-color: $white;
+    &:focus {
+      border-color: $theme-color-2;
+    }
+  }
+  .message-control {
+    height: 130px;
+  }
+}
+
+.forgot-password {
+  font-size: $default-font-3;
+  a {
+    color: $theme-color-4;
+    @include transition(0.3s);
+    &:hover {
+      color: $theme-color-2;
+    }
+  }
+}
+
+/*==== gmaps ======*/
+.gmaps {
+  iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+  }
+}
+#map {
+  width: 100%;
+  height: 465px;
+}
+/*==== leaflet-bar ======*/
+.leaflet-bar {
+  @include box-shadow(0 0 0 0);
+  a {
+    @include border-radius(4px);
+    border-bottom: 0;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    @include box-shadow(0 1px 5px rgba(0,0,0,.3));
+    margin-bottom: 4px;
+    font-size: $display-28;
+    &:hover {
+      @include border-radius(4px);
+      border-bottom: 0;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      background-color: $theme-color-2;
+      color: $white;
+    }
+  }
+}
+/*==== contact-address ======*/
+.contact-address {
+  li {
+    position: relative;
+    padding-left: 45px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(128, 137, 150, 0.1);
+    > .icon-element {
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      font-size: $display-30;
+    }
+  }
+}
+/*==== recapcha-box ======*/
+.recapcha-box {
+  .form-control {
+    width: 130px;
+    padding-left: 20px;
+  }
+}
+/*====================================================
+    booking-area
+ ====================================================*/
+.payment-option {
+  .payment-radio {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: $default-font;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: $font-weight-semi-bold;
+    color: $theme-color;
+    input[type=radio] {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+      &:checked ~ .checkmark {
+        border-color: $theme-color-2;
+        &:after {
+          @include transform(scale(1));
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      &:checked ~ .payment-active {
+       display: block;
+      }
+    }
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 19px;
+      height: 19px;
+      margin: 3px 0 0 0;
+      border: 2px solid $color-2;
+      @include border-radius(50%);
+      @include transition(0.3s);
+      &:after {
+        position: absolute;
+        left: 3px;
+        top: 3px;
+        content: '';
+        width: 9px;
+        height: 9px;
+        background-color: #f66b5d;
+        opacity: 0;
+        visibility: hidden;
+        @include transform(scale(0.1));
+        @include border-radius(50%);
+        @include transition(0.3s);
+      }
+    }
+  }
+  .payment-active {
+    display: none;
+  }
+  .payment-content {
+    .contact-form-action {
+      .row {
+        @media #{$small_mobile_two} {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.booking-list {
+  li {
+    position: relative;
+    font-size: $default-font;
+    font-weight: $font-weight-semi-bold;
+    color: $theme-color;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    span {
+      color: $theme-color-4;
+      font-weight: $font-weight-medium;
+      font-size: $default-font-2;
+    }
+  }
+}
+.total-list {
+  li,
+  span{
+    font-size: $display-4;
+  }
+}
+
+.coupon-widget {
+  .col-lg-8 {
+    @media #{$laptop_m_four} {
+     padding-right: 15px !important;
+    }
+  }
+  .col-lg-8,
+  .col-lg-4 {
+    @media #{$laptop_m_four} {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  .btn-box {
+    @media #{$laptop_m_four} {
+      margin-top: 15px;
+    }
+  }
+}
+
+/*====================================================
+   booking-confirm-area
+ ====================================================*/
+.booking-confirm-area {
+  position: relative;
+  &:before,
+  &:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: -45px;
+    width: 16%;
+    height: 29%;
+    background-image: url("../images/dots.png");
+    background-size: cover;
+    background-position: center;
+    @include transform(rotate(-20deg));
+    opacity: 0.2;
+  }
+  &:after {
+    left: auto;
+    bottom: auto;
+    top: 85px;
+    right: -65px;
+  }
+}
+
+.booking-confirm-page {
+  span {
+    font-size: $display-6;
+    line-height: 140px;
+    color: $theme-color-5;
+    @media #{$small_mobile_two} {
+      font-size: $display-7;
+      line-height: 100px;
+    }
+  }
+}
+
+/*====================================================
+    invoice-area
+ ====================================================*/
+.invoice-content {
+  @include border-radius(3px);
+  background-color: $white;
+  @include box-shadow(0 0 40px rgba(82, 85, 90, 0.1));
+  padding: 40px 40px 32px 40px;
+  border: 1px solid rgba(128, 137, 150, 0.3);
+  .title {
+    font-size: $display-2;
+  }
+}
+
+.invoice-item {
+  .invoice-logo {
+    @media #{$small_mobile_two} {
+      margin-bottom: 40px;
+    }
+  }
+  .invoice-title {
+    .title {
+      font-size: $display-5;
+    }
+  }
+  .invoice-details {
+    font-weight: $font-weight-medium;
+    strong {
+      color: $theme-color;
+    }
+  }
+  .invoice-details.text-right {
+    @media #{$small_mobile_four} {
+      text-align: left !important;
+    }
+  }
+  .invoice-info {
+    .title {
+      font-size: $display-4;
+    }
+  }
+}
+
+.invoice-table {
+  table {
+    tr {
+      th {
+        color: $theme-color;
+        font-weight: $font-weight-semi-bold;
+        border-bottom-width: 1px;
+      }
+      th,
+      td {
+        font-size: $default-font;
+        padding: 10px 20px;
+      }
+      td {
+        font-size: $default-font-2;
+        font-weight: $font-weight-medium;
+      }
+    }
+  }
+  .invoice-table-two {
+    margin-bottom: 0;
+    tr {
+      th,
+      td {
+        border-top: none;
+        padding: 5px 0 5px 0;
+      }
+      td {
+        text-align: right;
+      }
+    }
+  }
+}
+
+/*================== form-box ===================*/
+.form-box {
+  border: 1px solid rgba(128, 137, 150, 0.1);
+  @include border-radius(5px);
+  margin-bottom: 30px;
+  background-color: $white;
+  @include box-shadow(0 0 40px rgba(82, 85, 90, 0.1));
+}
+.form-title-wrap {
+  padding: 20px;
+  border-bottom: 1px solid rgba(128, 137, 150, 0.1);
+}
+.form-content {
+  padding: 20px;
+}
+

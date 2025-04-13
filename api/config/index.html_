@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="uploads/global/favicon.png">
+<meta http-equiv="refresh" content="1;URL='home'" />
+<title>Loading...</title>
+</head>
+<body style="overflow:hidden">
+   <div class="loader" style="display: block;display: flex; align-items: center; justify-content: center; height: 100vh;">
+    <div class="spinner"></div>
+</div>
+
+<style>
+.loader{text-align:center;display:none;padding: auto 50px;background:#fff}
+@media screen and (min-width:600px){.loader{padding-top:0px}
+}.spinner{margin-left:auto;margin-right:auto;text-align:center;border:4px solid #f2f2f2;border-top:4px solid #ff6259;border-top:4px solid #007cff;border-radius:50%;width:30px;height:30px;-webkit-animation:spin .45s linear infinite;-moz-animation:spin .45s linear infinite;-o-animation:spin .45s linear infinite;animation:spin .45s linear infinite}
+@media screen and (min-width:600px){.spinner{width:28px;height:28px}
+}.airport-loader{position:relative;margin-top:15px;margin-left:15px;margin-right:15px;width:calc(100% - 30px);text-align:center;background:#fff}
+@media screen and (min-width:600px){.airport-loader{margin:0;margin-top:15px;display:inline-block;vertical-align:top}
+}/*! CSS Used keyframes */@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}
+100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
+}@-moz-keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}
+100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
+}@-o-keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}
+100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
+}@keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}
+100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
+}
+</style>
+ </body>
+</html>
+
+<!--<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="uploads/global/favicon.png">
+<meta http-equiv="refresh" content="1;URL='home'" />
+</head>
+<body>
+    <div class="placeholder-content-header">
+        <div class="container" style="position:relative">
+        <div class="placeholder-content-header-inner-left"></div>
+        <div class="placeholder-content-header-inner-right"></div>
+       </div>
+    </div>
+    <div class="placeholder-content-sub">
+        <div class="container" style="position:relative">
+        <div class="placeholder-content-sub-inner-left"></div>
+        <div class="placeholder-content-sub-inner-right"></div>
+        </div>
+    </div>
+    <div class="placeholder-content-wrapper">
+        <div class="placeholder-content-inner-wrapper"></div>
+    </div>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="placeholder-content">
+                    <div class="placeholder-content_item"></div>
+                    <div class="placeholder-content_item"></div>
+                    <div class="placeholder-content_item"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="placeholder-content">
+                    <div class="placeholder-content_item"></div>
+                    <div class="placeholder-content_item"></div>
+                    <div class="placeholder-content_item"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="placeholder-content">
+                    <div class="placeholder-content_item"></div>
+                    <div class="placeholder-content_item"></div>
+                    <div class="placeholder-content_item"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </body>
+</html>
+<style>
+*,::after,::before{-webkit-box-sizing:border-box;box-sizing:border-box}
+body{margin:0px}
+.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
+@media(min-width:576px){.container{max-width:540px}
+}@media(min-width:768px){.container{max-width:720px}
+}@media(min-width:992px){.container{max-width:960px}
+}@media(min-width:1200px){.container{max-width:1140px}
+}@media(min-width:576px){.container{max-width:540px}
+}@media(min-width:768px){.container{max-width:720px}
+}@media(min-width:992px){.container{max-width:960px}
+}@media(min-width:1200px){.container{max-width:1140px}
+}.row{display:-ms-flexbox;display:-webkit-box;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}
+.col-md-4{position:relative;width:100%;padding-right:15px;padding-left:15px}
+@media(min-width:768px){.col-md-4{-ms-flex:0 0 33.333333%;-webkit-box-flex:0;flex:0 0 33.333333%;max-width:33.333333%}
+}.mt-5{margin-top:3rem!important}
+.placeholder-content-header{height:60px;overflow:hidden;position:relative;background:#fff}
+.placeholder-content-sub{height:35px;overflow:hidden;position:relative;background:#eee;background-size:1300px}
+.placeholder-content-wrapper{height:450px;overflow:hidden;position:relative;background:#eaeaea}
+.placeholder-content-header-inner-left{width:135px;height:35px;overflow:hidden;position:absolute;top:15px;-webkit-animation-duration:1.7s;animation-duration:1.7s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-name:placeholderAnimate;animation-name:placeholderAnimate;background:-webkit-gradient(linear,left top,right top,color-stop(2%,#eee),color-stop(18%,#ddd),color-stop(33%,#f1efef));background:linear-gradient(to right,#eee 2%,#ddd 18%,#f1efef 33%);background-size:1300px}
+.placeholder-content-header-inner-right{width:314px;height:35px;overflow:hidden;position:absolute;top:15px;right:0;-webkit-animation-duration:1.7s;animation-duration:1.7s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-name:placeholderAnimate;animation-name:placeholderAnimate;background:-webkit-gradient(linear,left top,right top,color-stop(2%,#eee),color-stop(18%,#ddd),color-stop(33%,#f1efef));background:linear-gradient(to right,#eee 2%,#ddd 18%,#f1efef 33%);background-size:1300px}
+.placeholder-content-sub-inner-right{width:164px;height:22px;overflow:hidden;position:absolute;top:7px;right:0;-webkit-animation-duration:1.7s;animation-duration:1.7s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-name:placeholderAnimate;animation-name:placeholderAnimate;background:-webkit-gradient(linear,left top,right top,color-stop(2%,#eae8e8),color-stop(18%,#dcdcdc),color-stop(33%,#eae8e8));background:linear-gradient(to right,#eae8e8 2%,#dcdcdc 18%,#eae8e8 33%);background-size:1300px}
+.placeholder-content-sub-inner-left{width:302px;height:22px;overflow:hidden;position:absolute;top:7px;-webkit-animation-duration:1.7s;animation-duration:1.7s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-name:placeholderAnimate;animation-name:placeholderAnimate;background:-webkit-gradient(linear,left top,right top,color-stop(2%,#eae8e8),color-stop(18%,#dcdcdc),color-stop(33%,#eae8e8));background:linear-gradient(to right,#eae8e8 2%,#dcdcdc 18%,#eae8e8 33%);background-size:1300px}
+.placeholder-content-inner-wrapper{width:1110px;height:178px;overflow:hidden;position:absolute; top: 70%;left: 50%;transform: translate(-50%, -50%);-webkit-animation-duration:1.7s;animation-duration:1.7s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-name:placeholderAnimate;animation-name:placeholderAnimate;background:-webkit-gradient(linear,left top,right top,color-stop(4%,#e3e3e3),color-stop(34%,#e0e0e0),color-stop(41%,#e4e4e4));background:linear-gradient(to right,#e3e3e3 4%,#e0e0e0 34%,#e4e4e4 41%);background-size:1300px}
+.placeholder-content{height:235px;overflow:hidden;background:#000;position:relative;-webkit-animation-duration:1.7s;animation-duration:1.7s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-name:placeholderAnimate;animation-name:placeholderAnimate;background:#f6f7f8;background:-webkit-gradient(linear,left top,right top,color-stop(2%,#eee),color-stop(18%,#ddd),color-stop(33%,#eee));background:linear-gradient(to right,#eee 2%,#ddd 18%,#eee 33%);background-size:1300px}
+.placeholder-content_item{width:100%;height:20px;position:absolute;background:#fff;z-index:2}
+.placeholder-content_item:nth-child(1){top:149px;height:17px;left:0}
+.placeholder-content_item:nth-child(2){top:187px;left:0;height:15px}
+.placeholder-content_item:nth-child(3){top:213px;left:0;height:10px}
+@-webkit-keyframes placeholderAnimate{0%{background-position:-650px 0}
+100%{background-position:650px 0}
+}@keyframes placeholderAnimate{0%{background-position:-650px 0}
+100%{background-position:650px 0}
+}
+</style>-->

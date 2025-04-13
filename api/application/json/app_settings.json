@@ -1,0 +1,10 @@
+{
+    "spa_settings": {
+        "spa_status": "disable",
+        "spa_homepage": "Rendezvous Hotels",
+        "spa_module": "hotels"
+    },
+    "homepage_feature_items": {
+        "ean_hotel_status": "disable"
+    }
+}

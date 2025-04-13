@@ -1,0 +1,9 @@
+@media(max-width: 768px){
+.nav-mob {display: block !important; }
+.nav-mob-p8 {padding: 8px !important;}
+.m-mb-0 {margin: 0px !important;}
+
+.daterangepicker { position: fixed; top: 0px !important; width: 100%; bottom: 0px; margin-top: 0; }
+.daterangepicker .drp-calendar { max-width: 100% !important }
+
+}

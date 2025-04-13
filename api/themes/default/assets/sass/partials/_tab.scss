@@ -1,0 +1,205 @@
+/*===== section-tab ======*/
+.section-tab {
+  .nav-tabs {
+    border-bottom: none;
+    .nav-item {
+      margin-bottom: 0;
+      margin-right: 6px;
+      @media #{$tab_device} {
+        margin-bottom: 6px;
+      }
+       @media #{$large_mobile} {
+        margin-bottom: 6px;
+      }
+       @media #{$small_mobile} {
+        margin-bottom: 6px;
+      }
+    }
+    .nav-link {
+      @include border-radius(8px 8px 0 0);
+      background-color: transparent;
+      color: $white;
+      border: none;
+      padding: 9px 25px 9px 25px;
+      @include transition(0.3s);
+      font-weight: $font-weight-medium;
+      i {
+        font-size: $display-28;
+      }
+      &.active {
+        color: $theme-color-2;
+        background-color: $white;
+      }
+    }
+  }
+}
+
+/*====== section-tab 2 ========*/
+.section-tab-2 {
+  .nav-tabs {
+    .nav-item {
+      margin-right: 20px;
+    }
+    .nav-link {
+      color: $theme-color;
+      background-color: transparent;
+      padding: 0 0 0 20px;
+      font-size: $default-font-3;
+      @include border-radius(0);
+      position: relative;
+      &::before,
+      &::after {
+        position: absolute;
+        content: "";
+        top: 8px;
+        left: 0;
+        width: 14px;
+        height: 14px;
+        @include border-radius(50%);
+        @include transition(0.3s);
+      }
+      &::before {
+        left: 4px;
+        top: 12px;
+        width: 6px;
+        height: 6px;
+        background-color: $white;
+        @include transform(scale(0));
+      }
+      &::after {
+        border: 2px solid rgba(19, 41, 104, 0.2);
+      }
+      &.active,
+      &:hover {
+        background-color: transparent;
+        color: $theme-color-2;
+        &::before {
+          background-color: $theme-color-2;
+          @include transform(scale(1));
+        }
+        &::after {
+          border-color: $theme-color-2;
+        }
+      }
+    }
+  }
+}
+
+/*====== section-tab 3 ========*/
+.section-tab-3 {
+  .nav-tabs {
+    .nav-item {
+      margin-right: 5px;
+      margin-bottom: 5px;
+      &:last-child {
+        @media #{$tab_device} {
+         margin-bottom: 0;
+        }
+        @media #{$large_mobile} {
+         margin-bottom: 0;
+        }
+        @media #{$small_mobile} {
+         margin-bottom: 0;
+        }
+      }
+    }
+    .nav-link {
+      padding: 5px 45px;
+      color: $theme-color-4;
+      background-color: $white;
+      @include box-shadow(0 0 40px rgba(82, 85, 90, 0.1));
+      @include border-radius(30px);
+      font-size: $default-font;
+      @media #{$small_mobile_five} {
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+      &.active {
+        color: $white;
+        background-color: $theme-color-2;
+        &:hover {
+          color: $white;
+          background-color: $theme-color-2;
+        }
+      }
+      &:hover {
+        color: $white;
+        background-color: $theme-color-2;
+      }
+    }
+  }
+}
+
+/*====== check-mark-tab ========*/
+.check-mark-tab {
+  .nav-tabs {
+    .nav-item {
+      margin-right: 20px;
+      @media #{$tab_device} {
+        margin-bottom: 20px;
+      }
+      @media #{$large_mobile} {
+        margin-bottom: 20px;
+      }
+      @media #{$small_mobile} {
+        margin-bottom: 20px;
+      }
+      &:last-child {
+        margin-right: 0;
+        @media #{$tab_device} {
+          margin-bottom: 0;
+        }
+        @media #{$large_mobile} {
+          margin-bottom: 0;
+        }
+        @media #{$small_mobile} {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .nav-link {
+      background-color: $white;
+      border: 2px solid rgba(128, 137, 150, 0.1);
+      color: $theme-color-4;
+      padding: 20px;
+      position: relative;
+      @include border-radius(8px);
+      font-weight: $font-weight-regular;
+      .la-check {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        font-size: $display-31;
+        @include transform(scale(0));
+        @include transition(0.3s);
+      }
+      &.active {
+        border-color: $theme-color-2;
+        .icon-element {
+          @include transform(scale(1));
+        }
+        &:hover {
+          border-color: $theme-color-2;
+        }
+      }
+      &:hover {
+        background-color: $white;
+      }
+    }
+  }
+}
+
+.tab-content-info {
+  @media #{$tab_device} {
+    display: block !important;
+  }
+   @media #{$large_mobile} {
+    display: block !important;
+  }
+   @media #{$small_mobile} {
+    display: block !important;
+  }
+}

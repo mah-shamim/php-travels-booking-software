@@ -1,0 +1,10 @@
+{
+    "require": {
+        "filp/whoops": "^2.9",
+        "sentry/sdk": "^3.1",
+        "php-curl-class/php-curl-class": "^8.9",
+        "phpmailer/phpmailer": "^6.3",
+        "guzzlehttp/guzzle": "^7.3",
+        "stripe/stripe-php": "^7.77"
+    }
+}

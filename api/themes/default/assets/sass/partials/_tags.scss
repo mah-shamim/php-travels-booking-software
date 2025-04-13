@@ -1,0 +1,23 @@
+/*==== tag-list =====*/
+.tag-list {
+  li {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-size: $default-font-2;
+    margin-right: 3px;
+    a {
+      border: 1px solid rgba(128, 137, 150, 0.2);
+      color: $theme-color-4;
+      @include border-radius(4px);
+      @include transition(0.3s);
+      padding: 4px 18px;
+      display: block;
+    }
+    &:hover {
+      a {
+        color: $theme-color-2;
+        border-color: $theme-color-2;
+      }
+    }
+  }
+}

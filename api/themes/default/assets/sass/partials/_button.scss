@@ -1,0 +1,138 @@
+/*=== theme-btn ====*/
+.theme-btn {
+  font-size: $default-font-2;
+  color: $white;
+  line-height: 46px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: $theme-color-2;
+  @include transition(0.3s);
+  position: relative;
+  display: inline-block;
+  @include border-radius(4px);
+  border: 1px solid $theme-color-2;
+  font-weight: $font-weight-medium;
+  &:hover {
+    background-color: $white;
+    color: $theme-color-2;
+  }
+}
+
+/*=== theme-btn-small ====*/
+.theme-btn-small {
+  line-height: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*=== theme-btn-transparent ====*/
+.theme-btn-transparent {
+  background-color: $white;
+  color: $theme-color-2;
+  &:hover {
+    background-color: $theme-color-2;
+    color: $white;
+  }
+}
+
+/*=== theme-btn-rgb ====*/
+.theme-btn-rgb {
+  border: none;
+  background-color: rgba(40, 125, 250, 0.1);
+  color: $theme-color-2;
+  &:hover {
+    background-color: rgba(40, 125, 250, 0.1);
+  }
+}
+
+/*=== theme-btn-danger-rgb ====*/
+.theme-btn-danger-rgb {
+  background-color: rgba(220, 54,67, 0.1);
+  color: #dc3545;
+  &:hover {
+    background-color: rgba(220, 54,67, 0.1);
+    color: #dc3545;
+  }
+}
+
+/*=== theme-btn-hover-gray ====*/
+.theme-btn-hover-gray {
+  color: $theme-color;
+  font-weight: $font-weight-medium;
+  &:focus {
+    @include box-shadow(0 0 0 0);
+  }
+  &:hover {
+    background-color: rgba(128, 137, 150, 0.1);
+    color: $theme-color;
+  }
+}
+
+/*==== btn-text ======*/
+.download-btn {
+  padding: 7px 20px;
+}
+/*=== multi-flight-remove ====*/
+.multi-flight-remove {
+  color: $theme-color;
+  font-size: $display-28;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: $white;
+  @include border-radius(50%);
+  @include box-shadow(0 2px 10px 0 rgba(0, 0, 0, 0.1));
+  border: none;
+  @include transition(0.3s);
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    background-color: $theme-color-2;
+    color: $white;
+  }
+}
+
+/*==== btn-text ======*/
+.btn-text {
+  color: $theme-color;
+  @include transition(0.3s);
+  font-size: $default-font-2;
+  i {
+    padding-left: 1px;
+    font-size: $default-font-4;
+  }
+  &:hover {
+    color: $theme-color-2;
+  }
+}
+
+.video-play-btn {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  display: inline-block;
+  text-align: center;
+  background-color: $theme-color-2;
+  color: $white;
+  font-size: $display-5;
+  @include border-radius(50%);
+  @include transition(0.3s);
+  &:hover {
+    background-color: $theme-color-3;
+    color: $white;
+  }
+}
+
+.button-warning {
+  background-color: $color-5 !important;
+}
+.button-info {
+  background-color: $alter-color-2 !important;
+}
+.button-success {
+  background-color: $theme-color-5 !important;
+}
+.button-danger {
+  background-color: $theme-color-2 !important;
+}

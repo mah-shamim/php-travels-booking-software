@@ -1,0 +1,66 @@
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP:Body>
+        <util:ReferenceDataRetrieveRsp TransactionId="C7225F430A076477F4CD55A09B0449EA" ResponseTime="44" MoreResults="true" xmlns:util="http://www.travelport.com/schema/util_v42_0">
+            <util:ReferenceDataItem Code="113" Name="120 AC" Description="120 AC" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="115" Name="220 AC" Description="220 AC" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="905" Name="Air Conditioning - adjustable" Description="Air Conditioning - adjustable" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="5" Name="Air conditioning" Description="Air conditioning" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="6" Name="Airline desk" Description="Airline desk" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="911" Name="Allergy-Free Room Available" Description="Allergy-Free Room Available" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="268" Name="All public areas non-smoking" Description="All public areas non-smoking" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="7" Name="Balcony/Lanai/Terrace" Description="Balcony/Lanai/Terrace" Deprecated="false">
+                <util:AdditionalInfo Type="RA">Room Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="13" Name="Bathtub" Description="Bathtub" Deprecated="false">
+                <util:AdditionalInfo Type="RA">Room Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="953" Name="Beach" Description="Beach" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="239" Name="Beachfront" Description="Beachfront" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="939" Name="Biking" Description="Biking" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="202" Name="Bicycle rentals" Description="Bicycle rentals" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="923" Name="Billiards" Description="Billiards" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="924" Name="Bowling" Description="Bowling" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="105" Name="Banquet facilities" Description="Banquet facilities" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="157" Name="Buffet breakfast" Description="Buffet breakfast" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="118" Name="Barbeque grills" Description="Barbeque grills" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="227" Name="Complimentary breakfast" Description="Complimentary breakfast" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="944" Name="Bridal Suite" Description="Bridal Suite" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+        </util:ReferenceDataRetrieveRsp>
+    </SOAP:Body>
+</SOAP:Envelope>

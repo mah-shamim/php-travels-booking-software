@@ -1,0 +1,72 @@
+/*======== progress-item ========*/
+.review-bars {
+  @media #{$tab_device} {
+    margin-top: 40px;
+  }
+  @media #{$large_mobile} {
+    margin-top: 40px;
+  }
+  @media #{$small_mobile} {
+    margin-top: 40px;
+  }
+}
+/*======== progress-item ========*/
+.progress-item {
+  margin-bottom: 10px;
+  position: relative;
+}
+.progressbar-box {
+  width: calc(100% - 53px);
+  margin-right: 10px;
+}
+
+.progressbar-line {
+  position:relative;
+  display:block;
+  width:100%;
+  background-color: $color;
+  height: 5px;
+  @include border-radius(30px);
+  @include transition(0.4s linear);
+  -webkit-transition-property:width, background-color;
+  -moz-transition-property:width, background-color;
+  -ms-transition-property:width, background-color;
+  -o-transition-property:width, background-color;
+  transition-property:width, background-color;
+}
+
+.progressbar-title {
+  color: $theme-color;
+  font-size: $default-font-2;
+  margin-bottom: 3px;
+}
+
+.progressbar-line-item {
+  height:5px;
+  width:0;
+  background-color: $theme-color-4;
+  @include border-radius(30px);
+}
+.bar-bg-1 {
+  background-color: $theme-color-2;
+}
+.bar-bg-2 {
+  background-color: $color-4;
+}
+.bar-bg-3 {
+  background-color: $color-5;
+}
+.bar-bg-4 {
+  background-color: $color-6;
+}
+.bar-bg-5 {
+  background-color: $color-7;
+}
+
+.bar-percent {
+  background-color: rgba(128, 137, 150, 0.1);
+  @include border-radius(30px);
+  padding: 3px 10px;
+  font-size: $default-font-2;
+  color: $theme-color;
+}

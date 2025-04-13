@@ -1,0 +1,153 @@
+/*=============== comments ===============*/
+.comment {
+  border-bottom: 1px solid rgba(128, 137, 150, 0.1);
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  position: relative;
+  @media #{$large_mobile} {
+    text-align: center;
+    display: block;
+  }
+  @media #{$small_mobile} {
+    text-align: center;
+    display: block;
+  }
+}
+
+/*=============== comments-avatar ===============*/
+.comment-avatar {
+  .avatar__img {
+    width: 90px;
+    height: 90px;
+    @include border-radius(50%);
+    margin-right: 25px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    border: 4px solid $white;
+    @include box-shadow(0 0 40px rgba(82, 85, 90, 0.1));
+    @media #{$large_mobile} {
+      margin-right: 0;
+    }
+    @media #{$small_mobile} {
+      margin-right: 0;
+    }
+  }
+}
+/*=============== meta-data ===============*/
+.meta-data {
+  position: relative;
+  @media #{$large_mobile} {
+    margin-top: 15px;
+  }
+  @media #{$small_mobile} {
+    margin-top: 15px;
+  }
+  .comment__meta {
+    font-size: $default-font-3;
+    a {
+      color: $theme-color-4;
+      @include transition(0.3s);
+      &:hover {
+        color: $theme-color-2;
+      }
+    }
+  }
+  .comment__author {
+    font-size: $display-30;
+    color: $theme-color;
+    font-weight: $font-weight-bold;
+  }
+  .comment__date {
+    font-size: $default-font-3;
+  }
+}
+/*=============== meta-data-inner ===============*/
+.meta-data-inner {
+  @media #{$large_mobile} {
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-top: 3px;
+  }
+  @media #{$small_mobile} {
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-top: 3px;
+  }
+  .rating-stars,
+  .comment__meta {
+    @media #{$small_mobile} {
+      margin-right: 0 !important;
+    }
+  }
+  .rating-stars {
+    @media #{$small_mobile} {
+     -ms-flex-pack: center;
+    justify-content: center;
+    }
+  }
+}
+/*=============== comment-content ===============*/
+.comment-content {
+  font-size: $default-font;
+  color: $theme-color-4;
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+/*=============== comment-reply ===============*/
+.comment-reply {
+  @media #{$large_mobile} {
+    display: block;
+    text-align: center;
+  }
+  @media #{$small_mobile} {
+    display: block;
+    text-align: center;
+  }
+  .theme-btn {
+    line-height: 35px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: $default-font-3;
+    background-color: rgba(128, 137, 150, 0.1);
+    color: $theme-color-4;
+    border: none;
+    &:hover {
+      background-color: rgba(128, 137, 150, 0.2);
+      color: $theme-color;
+    }
+  }
+}
+/*=============== reviews-reaction ===============*/
+.reviews-reaction {
+  a {
+    margin-right: 15px;
+    &:last-child{
+      margin-right: 0;
+    }
+    &.comment-like {
+      color: $color-4;
+    }
+    &.comment-dislike {
+      color: $color-7;
+    }
+    &.comment-love {
+      color: $color-5;
+    }
+  }
+}
+/*=============== comment-reply-item ===============*/
+.comment-reply-item {
+  margin-left: 100px;
+  @media #{$laptop_m_four} {
+    margin-left: 20px;
+  }
+  @media #{$large_mobile} {
+    margin-left: 0;
+  }
+  @media #{$small_mobile} {
+    margin-left: 0;
+  }
+}

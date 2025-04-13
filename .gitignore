@@ -1,0 +1,9 @@
+app/logs/*
+.idea
+.vscode
+.git
+api/system/cache/*
+app/cache/*
+**/.DS_Store
+db/*
+config.php

@@ -1,0 +1,140 @@
+// if (!empty($hotel_data['response']["hotels"])) {
+        //     $count = $hotel_data['response']["hotels"]['attributes']['total'];
+        //     if ($count == 1) {
+
+        //         $hotel_data_list = $hotel_data['response']["hotels"]['hotel'];
+        //         $room_data = array();
+        //         $room_data[0] = array(
+        //            'hotel_booking_id'=> $hotel_data_list['agreement']['attributes']['id'],
+        //            'hotel_available'=> $hotel_data_list['agreement']['attributes']['available'],
+        //            'hotel_room_basis'=> $hotel_data_list['agreement']['attributes']['room_basis'],
+        //            'hotel_meal_basis'=> $hotel_data_list['agreement']['attributes']['meal_basis'],
+        //            'hotel_ctype'=> $hotel_data_list['agreement']['attributes']['ctype'],
+        //            'hotel_c_type'=> $hotel_data_list['agreement']['attributes']['c_type'],
+        //            'hotel_room_type'=> $hotel_data_list['agreement']['attributes']['room_type'],
+        //            'hotel_is_dynamic'=> $hotel_data_list['agreement']['attributes']['is_dynamic'],
+        //            'hotel_currency'=> $hotel_data_list['agreement']['attributes']['currency'],
+        //            'hotel_total'=> $hotel_data_list['agreement']['attributes']['total'],
+        //            'hotel_total_gross'=> $hotel_data_list['agreement']['attributes']['total_gross'],
+        //            'hotel_original_total'=> $hotel_data_list['agreement']['attributes']['original_total'],
+        //            'hotel_special'=> $hotel_data_list['agreement']['attributes']['special'],
+
+        //            'hotel_room_type_individual' => $hotel_data_list['agreement']['room']['attributes']['type'],
+        //            'hotel_room_required' => $hotel_data_list['agreement']['room']['attributes']['required'],
+        //            'hotel_room_occupancy' => ($hotel_data_list['agreement']['room']['attributes']['occupancy'])?$hotel_data_list['agreement']['room']['attributes']['occupancy']:0,
+        //            'hotel_room_occupancyChild' => (!empty($hotel_data_list['agreement']['room']['attributes']['occupancyChild']))?$hotel_data_list['agreement']['room']['attributes']['occupancyChild']:0,
+        //            'hotel_room_occupancyInfant' => (!empty($hotel_data_list['agreement']['room']['attributes']['occupancyInfant']))?$hotel_data_list['agreement']['room']['attributes']['occupancyInfant']:0,
+        //            'hotel_room_from' => $hotel_data_list['agreement']['room']['price']['attributes']['from'],
+        //            'hotel_room_to' => $hotel_data_list['agreement']['room']['price']['attributes']['to'],
+        //            'hotel_room_nett' => $hotel_data_list['agreement']['room']['price']['roomprice']['attributes']['nett'],
+        //            'hotel_room_gross' => $hotel_data_list['agreement']['room']['price']['roomprice']['attributes']['gross']);
+
+        //         $segments[$hotel_data_list['attributes']['code']] = array(
+        //             'hotel_code' => $hotel_data_list['attributes']['code'],
+        //             'hotel_name' => $hotel_data_list['attributes']['name'],
+        //             'hotel_stars' => $hotel_data_list['attributes']['stars'],
+        //             'hotel_location' =>$hotel_data_list['attributes']['location'],
+        //             'hotel_address' =>$hotel_data_list['attributes']['address'],
+        //             'hotel_promo' =>$hotel_data_list['attributes']['promo'],
+        //             'hotel_city' =>$hotel_data_list['attributes']['city'],
+        //             'hotel_price' => $hotel_data_list['agreement']['room']['price']['roomprice']['attributes']['gross'],
+        //             'room_data' => $room_data
+        //         );   
+        //     } else {
+        //         foreach ($hotel_data['response']["hotels"] as $hotel_data_list) {
+        //             foreach ($hotel_data_list as $hotels) {
+        //                 $room_data = array();
+        //                 $i = 1;
+        //                 if (!empty($hotels['agreement']['room'])) {
+
+        //                     $room_data[0] = array(
+        //                         'hotel_booking_id'=> $hotels['agreement']['attributes']['id'],
+        //                         'hotel_available'=> $hotels['agreement']['attributes']['available'],
+        //                         'hotel_room_basis'=> $hotels['agreement']['attributes']['room_basis'],
+        //                         'hotel_meal_basis'=> $hotels['agreement']['attributes']['meal_basis'],
+        //                         'hotel_ctype'=> $hotels['agreement']['attributes']['ctype'],
+        //                         'hotel_c_type'=> $hotels['agreement']['attributes']['c_type'],
+        //                         'hotel_room_type'=> $hotels['agreement']['attributes']['room_type'],
+        //                         'hotel_is_dynamic'=> $hotels['agreement']['attributes']['is_dynamic'],
+        //                         'hotel_currency'=> $hotels['agreement']['attributes']['currency'],
+        //                         'hotel_total'=> $hotels['agreement']['attributes']['total'],
+        //                         'hotel_total_gross'=> $hotels['agreement']['attributes']['total_gross'],
+        //                         'hotel_original_total'=> $hotels['agreement']['attributes']['original_total'],
+        //                         'hotel_special'=> $hotels['agreement']['attributes']['special'],
+        //                         'hotel_room_type_individual' => $hotels['agreement']['room']['attributes']['type'],
+        //                         'hotel_room_required' => $hotels['agreement']['room']['attributes']['required'],
+        //                         'hotel_room_occupancy' => ($hotels['agreement']['room']['attributes']['occupancy'])?$hotels['agreement']['room']['attributes']['occupancy']:0,
+        //                         'hotel_room_occupancyChild' => (!empty($hotels['agreement']['room']['attributes']['occupancyChild']))?$hotels['agreement']['room']['attributes']['occupancyChild']:0,
+        //                         'hotel_room_occupancyInfant' => (!empty($hotels['agreement']['room']['attributes']['occupancyInfant']))?$hotels['agreement']['room']['attributes']['occupancyInfant']:0,
+        //                         'hotel_room_from' => $hotels['agreement']['room']['price']['attributes']['from'],
+        //                         'hotel_room_to' => $hotels['agreement']['room']['price']['attributes']['to'],
+        //                         'hotel_room_nett' => $hotels['agreement']['room']['price']['roomprice']['attributes']['nett'],
+        //                         'hotel_room_gross' => $hotels['agreement']['room']['price']['roomprice']['attributes']['gross']
+        //                     );  
+        //                     $price = $hotels['agreement']['room']['price']['roomprice']['attributes']['gross'];
+        //                     $currency = $hotels['agreement']['attributes']['currency'];
+        //                 } else {
+        //                     foreach ($hotels['agreement'] as $agreement) { 
+        //                         if ($i == 1) {
+
+        //                         } else {
+        //                             $room_data[] = array(
+        //                                 'hotel_booking_id'=> $agreement['attributes']['id'],
+        //                                 'hotel_available'=> $agreement['attributes']['available'],
+        //                                 'hotel_room_basis'=> $agreement['attributes']['room_basis'],
+        //                                 'hotel_meal_basis'=> $agreement['attributes']['meal_basis'],
+        //                                 'hotel_ctype'=> $agreement['attributes']['ctype'],
+        //                                 'hotel_c_type'=> $agreement['attributes']['c_type'],
+        //                                 'hotel_room_type'=> $agreement['attributes']['room_type'],
+        //                                 'hotel_is_dynamic'=> $agreement['attributes']['is_dynamic'],
+        //                                 'hotel_currency'=> $agreement['attributes']['currency'],
+        //                                 'hotel_total'=> $agreement['attributes']['total'],
+        //                                 'hotel_total_gross'=> $agreement['attributes']['total_gross'],
+        //                                 'hotel_original_total'=> $agreement['attributes']['original_total'],
+        //                                 'hotel_special'=> $agreement['attributes']['special'],
+        //                                 'hotel_room_type_individual' => $agreement['room']['attributes']['type'],
+        //                                 'hotel_room_required' => $agreement['room']['attributes']['required'],
+        //                                 'hotel_room_occupancy' => ($agreement['room']['attributes']['occupancy'])?$agreement['room']['attributes']['occupancy']:0,
+        //                                 'hotel_room_occupancyChild' => (!empty($agreement['room']['attributes']['occupancyChild']))?$agreement['room']['attributes']['occupancyChild']:0,
+        //                                 'hotel_room_occupancyInfant' => (!empty($agreement['room']['attributes']['occupancyInfant']))?$agreement['room']['attributes']['occupancyInfant']:0,
+        //                                 'hotel_room_from' => $agreement['room']['price']['attributes']['from'],
+        //                                 'hotel_room_to' => $agreement['room']['price']['attributes']['to'],
+        //                                 'hotel_room_nett' => $agreement['room']['price']['roomprice']['attributes']['nett'],
+        //                                 'hotel_room_gross' => $agreement['room']['price']['roomprice']['attributes']['gross']
+        //                             );
+        //                             if ($i == 1) {
+        //                                 $price = $agreement['room']['price']['roomprice']['attributes']['gross'];
+        //                                 $currency = $agreement['attributes']['currency'];
+        //                             } else {
+        //                                 if ($price > $agreement['room']['price']['roomprice']['attributes']['gross']) {
+        //                                     $price = $agreement['room']['price']['roomprice']['attributes']['gross'];
+        //                                     $currency = $agreement['attributes']['currency'];
+        //                                 }
+        //                             }
+        //                             $i++;
+        //                         }
+        //                     }
+        //                 }
+                        
+        //                 $segments[$hotels['attributes']['code']] = array(
+        //                     'hotel_code' => $hotels['attributes']['code'],
+        //                     'hotel_name' => $hotels['attributes']['name'],
+        //                     'hotel_stars' => $hotels['attributes']['stars'],
+        //                     'hotel_location' =>$hotels['attributes']['location'],
+        //                     'hotel_address' =>$hotels['attributes']['address'],
+        //                     'hotel_promo' =>$hotels['attributes']['promo'],
+        //                     'hotel_city' =>$hotels['attributes']['city'],
+        //                     'hotel_price' => $price,
+        //                     'hotel_currency' => $currency,
+        //                     'room_data' => $room_data
+        //                 );
+                        
+        //             } 
+                    
+        //         }
+        //     } 
+        // } else {
+        //     $segments[] = array(
+        //         'errors' => "No Data Received"
+        //     );
+        // }

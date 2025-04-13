@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "category": "Admin",
+        "templates": [
+            {
+                "id": "1",
+                "name": "Booking Order - Admin",
+                "shortcode": "{invoice_id} {invoice_code} {deposit_amount} {total_amount} {customer_email} {customer_id} {country} {phone} {currency_code} {invoice_link} {site_title} {fullname}",
+                "body": "Order Information Invoice No: \n{invoice_id} Invoice code {invoice_code} \nDeposit Amount: {currency_code} {deposit_amount} \nTotal Amount: {currency_code} {total_amount} \nCustomer Information Customer ID: {customer_id} \nName : {fullname} \nEmail : {customer_email} Phone : {phone} You can view invoice at {invoice_link}"
+            },
+            {
+                "id": "2",
+                "name": "Booking Paid - Admin",
+                "shortcode": "{invoice_id} {invoice_code} {deposit_amount} {total_amount} {customer_email} {customer_id} {country} {phone} {currency_code} {invoice_link} {site_title} {fullname}",
+                "body": "Order Information Invoice No: {invoice_id} Invoice code {invoice_code} \nDeposit Amount: {currency_code} {deposit_amount} \nTotal Amount: {currency_code} {total_amount} \nCustomer Information Customer ID: {customer_id} \nName : {fullname} \nEmail : {customer_email} \nPhone : {phone} You can view invoice at {invoice_link}"
+            },
+            {
+                "id": "3",
+                "name": "Email Admin for Supplier Registration",
+                "shortcode": "{invoice_id} {invoice_code} {deposit_amount} {total_amount} {customer_email} {customer_id} {country} {phone} {currency_code} {invoice_link} {site_title} {fullname}",
+                "body": "Order Information Invoice No: {invoice_id} Invoice code {invoice_code} Deposit Amount: {currency_code} {deposit_amount} Total Amount: {currency_code} {total_amount} Customer Information Customer ID: {customer_id} Name : {fullname} Email : {customer_email} Phone : {phone} You can view invoice at {invoice_link}"
+            },
+            {
+                "id": "4",
+                "name": "Email Admin for Customer Unverified Registration",
+                "shortcode": "{invoice_id} {invoice_code} {deposit_amount} {total_amount} {customer_email} {customer_id} {country} {phone} {currency_code} {invoice_link} {site_title} {fullname}",
+                "body": "Order Information Invoice No: {invoice_id} Invoice code {invoice_code} Deposit Amount: {currency_code} {deposit_amount} Total Amount: {currency_code} {total_amount} Customer Information Customer ID: {customer_id} Name : {fullname} Email : {customer_email} Phone : {phone} You can view invoice at {invoice_link}"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "category": "Supplier",
+        "templates": [
+            {
+                "id": 5,
+                "name": "Supplier Register",
+                "shortcode": "{invoice_id} {invoice_code} {deposit_amount} {total_amount} {customer_email} {customer_id} {country} {phone} {currency_code} {invoice_link} {site_title} {fullname}",
+                "body": "Order Information Invoice No.: {invoice_id} Invoice code {invoice_code} Deposit Amount: {currency_code} {deposit_amount} Total Amount: {currency_code} {total_amount} Customer Information Customer ID: {customer_id} Name : {fullname} Email : {customer_email} Phone : {phone} You can view invoice at {invoice_link}"
+            },
+            {
+                "id": 6,
+                "name": "Booking Paid - Supplier",
+                "shortcode": "{invoice_id} {invoice_code} {deposit_amount} {total_amount} {customer_email} {customer_id} {country} {phone} {currency_code} {invoice_link} {site_title} {fullname}",
+                "body": "Order Information Invoice No.: {invoice_id} Invoice code {invoice_code} Deposit Amount: {currency_code} {deposit_amount} Total Amount: {currency_code} {total_amount} Customer Information Customer ID: {customer_id} Name : {fullname} Email : {customer_email} Phone : {phone} You can view invoice at {invoice_link}"
+            },
+            {
+                "id": 7,
+                "name": "Booking Order - Supplier",
+                "shortcode": "{invoice_id} {invoice_code} {deposit_amount} {total_amount} {customer_email} {customer_id} {country} {phone} {currency_code} {invoice_link} {site_title} {fullname}",
+                "body": "Order Information Invoice No.: {invoice_id} Invoice code {invoice_code} Deposit Amount: {currency_code} {deposit_amount} Total Amount: {currency_code} {total_amount} Customer Information Customer ID: {customer_id} Name : {fullname} Email : {customer_email} Phone : {phone} You can view invoice at {invoice_link}"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "category": "Customer",
+        "templates": [
+            {
+                "id": 8,
+                "name": "Booking Order - Customer",
+                "shortcode": "{invoice_id} {invoice_code} {deposit_amount} {total_amount} {customer_email} {customer_id} {country} {phone} {currency_code} {invoice_link} {site_title} {fullname}",
+                "body": "Order Information Invoice No.: {invoice_id} Invoice code {invoice_code} Deposit Amount: {currency_code} {deposit_amount} Total Amount: {currency_code} {total_amount} Customer Information Customer ID: {customer_id} Name : {fullname} Email : {customer_email} Phone : {phone} You can view invoice at {invoice_link}"
+            },
+            {
+                "id": 9,
+                "name": "Booking Paid - Customer",
+                "shortcode": "{invoice_id} {invoice_code} {deposit_amount} {total_amount} {customer_email} {customer_id} {country} {phone} {currency_code} {invoice_link} {site_title} {fullname}",
+                "body": "Order Information Invoice No.: {invoice_id} Invoice code {invoice_code} Deposit Amount: {currency_code} {deposit_amount} Total Amount: {currency_code} {total_amount} Customer Information Customer ID: {customer_id} Name : {fullname} Email : {customer_email} Phone : {phone} You can view invoice at {invoice_link}"
+            },
+            {
+                "id": 10,
+                "name": "Email to Customer - Signup",
+                "shortcode": "{invoice_id} {invoice_code} {deposit_amount} {total_amount} {customer_email} {customer_id} {country} {phone} {currency_code} {invoice_link} {site_title} {fullname}",
+                "body": "Order Information Invoice No.: {invoice_id} Invoice code {invoice_code} Deposit Amount: {currency_code} {deposit_amount} Total Amount: {currency_code} {total_amount} Customer Information Customer ID: {customer_id} Name : {fullname} Email : {customer_email} Phone : {phone} You can view invoice at {invoice_link}"
+            },
+            {
+                "id": 11,
+                "name": "Customer Register - Unvefified",
+                "shortcode": "{invoice_id} {invoice_code} {deposit_amount} {total_amount} {customer_email} {customer_id} {country} {phone} {currency_code} {invoice_link} {site_title} {fullname}",
+                "body": "Order Information Invoice No.: {invoice_id} Invoice code {invoice_code} Deposit Amount: {currency_code} {deposit_amount} Total Amount: {currency_code} {total_amount} Customer Information Customer ID: {customer_id} Name : {fullname} Email : {customer_email} Phone : {phone} You can view invoice at {invoice_link}"
+            },
+            {
+                "id": "12",
+                "name": "Verify New Customer Account",
+                "shortcode": "{invoice_id} {invoice_code} {deposit_amount} {total_amount} {customer_email} {customer_id} {country} {phone} {currency_code} {invoice_link} {site_title} {fullname}",
+                "body": "Order Information Invoice No: {invoice_id} Invoice code {invoice_code} Deposit Amount: {currency_code} {deposit_amount} Total Amount: {currency_code} {total_amount} Customer Information Customer ID: {customer_id} Name : {fullname} Email : {customer_email} Phone : {phone} You can view invoice at {invoice_link}"
+            }
+        ]
+    }
+]

@@ -1,0 +1,663 @@
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP:Body>
+        <util:ReferenceDataRetrieveRsp TransactionId="EB49E6120A07643B28DF2BA614D18B08" ResponseTime="48" MoreResults="false" xmlns:util="http://www.travelport.com/schema/util_v42_0">
+            <util:ReferenceDataItem Code="113" Name="120 AC" Description="120 AC" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="115" Name="220 AC" Description="220 AC" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="905" Name="Air Conditioning - adjustable" Description="Air Conditioning - adjustable" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="5" Name="Air conditioning" Description="Air conditioning" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="6" Name="Airline desk" Description="Airline desk" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="911" Name="Allergy-Free Room Available" Description="Allergy-Free Room Available" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="268" Name="All public areas non-smoking" Description="All public areas non-smoking" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="7" Name="Balcony/Lanai/Terrace" Description="Balcony/Lanai/Terrace" Deprecated="false">
+                <util:AdditionalInfo Type="RA">Room Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="13" Name="Bathtub" Description="Bathtub" Deprecated="false">
+                <util:AdditionalInfo Type="RA">Room Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="953" Name="Beach" Description="Beach" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="239" Name="Beachfront" Description="Beachfront" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="939" Name="Biking" Description="Biking" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="202" Name="Bicycle rentals" Description="Bicycle rentals" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="923" Name="Billiards" Description="Billiards" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="924" Name="Bowling" Description="Bowling" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="105" Name="Banquet facilities" Description="Banquet facilities" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="157" Name="Buffet breakfast" Description="Buffet breakfast" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="118" Name="Barbeque grills" Description="Barbeque grills" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="227" Name="Complimentary breakfast" Description="Complimentary breakfast" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="944" Name="Bridal Suite" Description="Bridal Suite" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="229" Name="Business services" Description="Business services" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="3" Name="Bus" Description="Bus" Deprecated="false">
+                <util:AdditionalInfo Type="TR">Transportation</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="15" Name="Car rental desk" Description="Car rental desk" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="16" Name="Casino" Description="Casino" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="18" Name="Cable television" Description="Cable television" Deprecated="false">
+                <util:AdditionalInfo Type="RA">Room Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="8" Name="Baby sitting" Description="Baby sitting" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="289" Name="Children programs" Description="Children programs" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="916" Name="Chapel/Shrine nearby" Description="Chapel/Shrine nearby" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="925" Name="Canoeing" Description="Canoeing" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="957" Name="Countryside" Description="Countryside" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="159" Name="Continental breakfast" Description="Continental breakfast" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="228" Name="Business center" Description="Business center" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="22" Name="Concierge desk" Description="Concierge desk" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="23" Name="Concierge floor" Description="Concierge floor" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="22" Name="Connecting rooms" Description="Connecting rooms" Deprecated="false">
+                <util:AdditionalInfo Type="RA">Room Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="20" Name="Coffee shop" Description="Coffee shop" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="193" Name="Children's play area" Description="Children's play area" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="913" Name="Children Stay Free" Description="Children Stay Free" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="948" Name="City Centre" Description="City Centre" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="26" Name="Currency exchange" Description="Currency exchange" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="968" Name="Covered Parking" Description="Covered Parking" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="937" Name="Cycling" Description="Cycling" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="7" Name="Courtesy Bus" Description="Courtesy Bus" Deprecated="false">
+                <util:AdditionalInfo Type="TR">Transportation</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="26" Name="Cribs" Description="Cribs" Deprecated="false">
+                <util:AdditionalInfo Type="BT">Bedding Type</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="114" Name="120 DC" Description="120 DC" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="117" Name="220DC" Description="220DC" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="255" Name="Data port" Description="Data port" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="938" Name="Darts" Description="Darts" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="175" Name="Dinner served in restaurant" Description="Dinner served in restaurant" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="46" Name="Hairdresser/barber" Description="Hairdresser/barber" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="107" Name="Beauty shop/salon" Description="Beauty shop/salon" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="33" Name="Double beds" Description="Double beds" Deprecated="false">
+                <util:AdditionalInfo Type="BT">Bedding Type</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="200" Name="Futon" Description="Futon" Deprecated="false">
+                <util:AdditionalInfo Type="BT">Bedding Type</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="58" Name="King bed" Description="King bed" Deprecated="false">
+                <util:AdditionalInfo Type="BT">Bedding Type</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="86" Name="Queen bed" Description="Queen bed" Deprecated="false">
+                <util:AdditionalInfo Type="BT">Bedding Type</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="131" Name="Extra person charge for rollaway use" Description="Extra person charge for rollaway use" Deprecated="false">
+                <util:AdditionalInfo Type="BT">Bedding Type</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="198" Name="Extra child charge for rollaway use" Description="Extra child charge for rollaway use" Deprecated="false">
+                <util:AdditionalInfo Type="BT">Bedding Type</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="203" Name="Single bed" Description="Single bed" Deprecated="false">
+                <util:AdditionalInfo Type="BT">Bedding Type</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="113" Name="Twin bed" Description="Twin bed" Deprecated="false">
+                <util:AdditionalInfo Type="BT">Bedding Type</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="269" Name="Meeting rooms" Description="Meeting rooms" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="195" Name="Disco" Description="Disco" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="34" Name="Executive floor" Description="Executive floor" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="48" Name="Health club" Description="Health club" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="33" Name="Elevators" Description="Elevators" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="256" Name="Exterior corridors" Description="Exterior corridors" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="161" Name="Full american breakfast" Description="Full american breakfast" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="42" Name="Free parking" Description="Free parking" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="44" Name="Game room" Description="Game room" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="236" Name="Golf" Description="Golf" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="257" Name="Gulf view" Description="Gulf view" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="237" Name="Horseback riding" Description="Horseback riding" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="240" Name="Hair dryer" Description="Hair dryer" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="47" Name="Accessible facilities" Description="Accessible facilities" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="900" Name="HIGH SPEED WIRELESS FEE" Description="HIGH SPEED WIRELESS FEE" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="241" Name="Ironing board" Description="Ironing board" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="901" Name="HIGH SPEED INT ACC FEE" Description="HIGH SPEED INT ACC FEE" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="259" Name="High speed internet access" Description="High speed internet access" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="260" Name="Interior corridors" Description="Interior corridors" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="54" Name="Indoor pool" Description="Indoor pool" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="261" Name="High speed wireless" Description="High speed wireless" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="55" Name="Jacuzzi" Description="Jacuzzi" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="59" Name="Kitchen" Description="Kitchen" Deprecated="false">
+                <util:AdditionalInfo Type="RA">Room Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="165" Name="Lounges/bars" Description="Lounges/bars" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="58" Name="Laundry/Valet service" Description="Laundry/Valet service" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="103" Name="Multilingual staff" Description="Multilingual staff" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="154" Name="Medical Facilities Service" Description="Medical Facilities Service" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="902" Name="MOUNTAIN VIEW" Description="MOUNTAIN VIEW" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="74" Name="Non-smoking" Description="Non-smoking" Deprecated="false">
+                <util:AdditionalInfo Type="RA">Room Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="238" Name="Oceanfront" Description="Oceanfront" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="66" Name="Outdoor pool" Description="Outdoor pool" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="903" Name="OCEAN VIEW" Description="OCEAN VIEW" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="224" Name="Pets allowed" Description="Pets allowed" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="85" Name="Private bathroom" Description="Private bathroom" Deprecated="false">
+                <util:AdditionalInfo Type="RA">Room Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="57" Name="Kennels" Description="Kennels" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="231" Name="Racquetball" Description="Racquetball" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="88" Name="Refrigerator" Description="Refrigerator" Deprecated="false">
+                <util:AdditionalInfo Type="RA">Room Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="77" Name="Room Service" Description="Room Service" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="76" Name="Restaurant" Description="Restaurant" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="79" Name="Sauna" Description="Sauna" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="230" Name="Secured parking" Description="Secured parking" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="84" Name="Spa" Description="Spa" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="272" Name="Snow skiing" Description="Snow skiing" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="199" Name="Train access" Description="Train access" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="233" Name="Tennis court" Description="Tennis court" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="97" Name="Valet parking" Description="Valet parking" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="101" Name="Wheelchair access" Description="Wheelchair access" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="904" Name="WHEELCHAIR ACCESS ELEV" Description="WHEELCHAIR ACCESS ELEV" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="104" Name="Wedding services" Description="Wedding services" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="273" Name="Water skiing" Description="Water skiing" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="931" Name="Diving" Description="Diving" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="96" Name="Dry cleaning" Description="Dry cleaning" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="918" Name="Design/Boutique Hotel" Description="Design/Boutique Hotel" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="46" Name="Efficiencies" Description="Efficiencies" Deprecated="false">
+                <util:AdditionalInfo Type="RC">Room Classification</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="60" Name="Live entertainment" Description="Live entertainment" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="919" Name="Express Check in/Check out" Description="Express Check in/Check out" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="960" Name="Near Exhibition Centre" Description="Near Exhibition Centre" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="38" Name="Family plan" Description="Family plan" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="912" Name="Family Rooms" Description="Family Rooms" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="1" Name="24-hour front desk" Description="24-hour front desk" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="908" Name="Parking Fee Required" Description="Parking Fee Required" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="932" Name="Fishing" Description="Fishing" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="41" Name="Fireplace" Description="Fireplace" Deprecated="false">
+                <util:AdditionalInfo Type="RA">Room Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="43" Name="Free transportation" Description="Free transportation" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="264" Name="Fire safety compliant" Description="Fire safety compliant" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="962" Name="Fitnesscenters in der Nahe (Kostenlos)" Description="Fitnesscenters in der Nahe (Kostenlos)" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="274" Name="Fax service" Description="Fax service" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="930" Name="Golf Course (within 3 km)" Description="Golf Course (within 3 km)" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="45" Name="Gift/News stand" Description="Gift/News stand" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="920" Name="Garden" Description="Garden" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="68" Name="Microwave" Description="Microwave" Deprecated="false">
+                <util:AdditionalInfo Type="RA">Room Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="174" Name="Lunch served in restaurant" Description="Lunch served in restaurant" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="162" Name="Meal plan available" Description="Meal plan available" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="69" Name="Minibar" Description="Minibar" Deprecated="false">
+                <util:AdditionalInfo Type="RA">Room Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="270" Name="Movies in room" Description="Movies in room" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="68" Name="Parking" Description="Parking" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="107" Name="Telephone" Description="Telephone" Deprecated="false">
+                <util:AdditionalInfo Type="RA">Room Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="71" Name="Pool" Description="Pool" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="106" Name="Bell staff/porter" Description="Bell staff/porter" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="965" Name="Oriental Room Style" Description="Oriental Room Style" Deprecated="false">
+                <util:AdditionalInfo Type="RA">Room Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="966" Name="Western Room Style" Description="Western Room Style" Deprecated="false">
+                <util:AdditionalInfo Type="RA">Room Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="92" Name="Safe" Description="Safe" Deprecated="false">
+                <util:AdditionalInfo Type="RA">Room Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="78" Name="Safe deposit box" Description="Safe deposit box" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="271" Name="Secretarial service" Description="Secretarial service" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="142" Name="Shower" Description="Shower" Deprecated="false">
+                <util:AdditionalInfo Type="RA">Room Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="914" Name="Skiing" Description="Skiing" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="91" Name="Tour/sightseeing desk" Description="Tour/sightseeing desk" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="251" Name="TV" Description="TV" Deprecated="false">
+                <util:AdditionalInfo Type="RA">Room Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="116" Name="VCR player" Description="VCR player" Deprecated="false">
+                <util:AdditionalInfo Type="RA">Room Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="195" Name="Water bed" Description="Water bed" Deprecated="false">
+                <util:AdditionalInfo Type="RA">Room Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="51" Name="High speed internet connection" Description="High speed internet connection" Deprecated="false">
+                <util:AdditionalInfo Type="RA">Room Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="122" Name="Wet bar" Description="Wet bar" Deprecated="false">
+                <util:AdditionalInfo Type="RA">Room Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="56" Name="Jogging track" Description="Jogging track" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="102" Name="Sofa bed" Description="Sofa bed" Deprecated="false">
+                <util:AdditionalInfo Type="RA">Room Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="69" Name="Photocopy center" Description="Photocopy center" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="202" Name="Tatami mats" Description="Tatami mats" Deprecated="false">
+                <util:AdditionalInfo Type="BT">Bedding Type</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="201" Name="Murphy bed" Description="Murphy bed" Deprecated="false">
+                <util:AdditionalInfo Type="BT">Bedding Type</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="91" Name="Rollaway bed" Description="Rollaway bed" Deprecated="false">
+                <util:AdditionalInfo Type="BT">Bedding Type</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="102" Name="Sofa bed" Description="Sofa bed" Deprecated="false">
+                <util:AdditionalInfo Type="BT">Bedding Type</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="24" Name="Walk" Description="Walk" Deprecated="false">
+                <util:AdditionalInfo Type="TR">Transportation</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="9" Name="Limo" Description="Limo" Deprecated="false">
+                <util:AdditionalInfo Type="TR">Transportation</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="31" Name="Public" Description="Public" Deprecated="false">
+                <util:AdditionalInfo Type="TR">Transportation</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="18" Name="Subway Rail" Description="Subway Rail" Deprecated="false">
+                <util:AdditionalInfo Type="TR">Transportation</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="26" Name="Other" Description="Other" Deprecated="false">
+                <util:AdditionalInfo Type="TR">Transportation</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="20" Name="Taxi" Description="Taxi" Deprecated="false">
+                <util:AdditionalInfo Type="TR">Transportation</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="15" Name="Rental Car" Description="Rental Car" Deprecated="false">
+                <util:AdditionalInfo Type="TR">Transportation</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="921" Name="Gay Friendly" Description="Gay Friendly" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="906" Name="Hammam(Turkish bath)" Description="Hammam(Turkish bath)" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="917" Name="Heating" Description="Heating" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="909" Name="Fitness Center Nearby" Description="Fitness Center Nearby" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="345" Name="Fitness center" Description="Fitness center" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="961" Name="Harbour" Description="Harbour" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="53" Name="Indoor parking" Description="Indoor parking" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="223" Name="Internet services" Description="Internet services" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="910" Name="Wi/Fi Wireless LAN" Description="Wi/Fi Wireless LAN" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="927" Name="Karaoke" Description="Karaoke" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="943" Name="Lunch to go/packed lunch" Description="Lunch to go/packed lunch" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="958" Name="Lake" Description="Lake" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="14" Name="Business library" Description="Business library" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="283" Name="Luggage service" Description="Luggage service" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="926" Name="Mini Golf" Description="Mini Golf" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="907" Name="Bar in the Middle Pool" Description="Bar in the Middle Pool" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="950" Name="Museum Area" Description="Museum Area" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="61" Name="Massage services" Description="Massage services" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="949" Name="Mountains" Description="Mountains" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="956" Name="Near Airport" Description="Near Airport" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="955" Name="Near Highway" Description="Near Highway" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="292" Name="Newspaper" Description="Newspaper" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="248" Name="Bedding type unknown or unspecified" Description="Bedding type unknown or unspecified" Deprecated="false">
+                <util:AdditionalInfo Type="BT">Bedding Type</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="282" Name="Airport shuttle service" Description="Airport shuttle service" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="327" Name="Events ticket service" Description="Events ticket service" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="41" Name="Free airport shuttle" Description="Free airport shuttle" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="65" Name="Outdoor parking" Description="Outdoor parking" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="72" Name="Poolside snack bar" Description="Poolside snack bar" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="81" Name="Shoe shine stand" Description="Shoe shine stand" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="82" Name="Shopping mall" Description="Shopping mall" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="83" Name="Solarium" Description="Solarium" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="86" Name="Steam bath" Description="Steam bath" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="915" Name="Soundproofed Rooms" Description="Soundproofed Rooms" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="922" Name="Ski Storage" Description="Ski Storage" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="928" Name="Squash Courts" Description="Squash Courts" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="929" Name="Table Tennis" Description="Table Tennis" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="933" Name="Snorkelling" Description="Snorkelling" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="934" Name="Ski School" Description="Ski School" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="935" Name="Windsurfing" Description="Windsurfing" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="936" Name="Walking" Description="Walking" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="940" Name="Very Important Person (VIP) Room Facilities" Description="Very Important Person (VIP) Room Facilities" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="941" Name="Room service Breakfast " Description="Room service Breakfast " Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="942" Name="Shops in Hotel" Description="Shops in Hotel" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="945" Name="Old Town" Description="Old Town" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="946" Name="University" Description="University" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="947" Name="Forest" Description="Forest" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="951" Name="River" Description="River" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="952" Name="Park, Recreation" Description="Park, Recreation" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="954" Name="Panoramic View" Description="Panoramic View" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="959" Name="Subway near" Description="Subway near" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="963" Name="Safety Deposit Box" Description="Safety Deposit Box" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="964" Name="Valet Parking" Description="Valet Parking" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="967" Name="Train Station Nearby" Description="Train Station Nearby" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+            <util:ReferenceDataItem Code="969" Name="Airport Shuttle Surcharge" Description="Airport Shuttle Surcharge" Deprecated="false">
+                <util:AdditionalInfo Type="HA">Hotel Amenity</util:AdditionalInfo>
+            </util:ReferenceDataItem>
+        </util:ReferenceDataRetrieveRsp>
+    </SOAP:Body>
+</SOAP:Envelope>

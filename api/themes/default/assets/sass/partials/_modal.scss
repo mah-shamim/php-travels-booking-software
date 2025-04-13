@@ -1,0 +1,109 @@
+/*===== modal-backdrop =====*/
+.modal-backdrop.show {
+  opacity: .8;
+}
+/*===== modal-popup =====*/
+.modal-popup {
+  .modal-header,
+  .modal-body,
+  .modal-footer{
+    padding: 20px;
+  }
+}
+.modal-header {
+  .close {
+    background-color: rgba(128, 137, 150, 0.2);
+    padding: 0;
+    width: 33px;
+    height: 33px;
+    @include border-radius(100%);
+    margin-top: -5px;
+    margin-right: 0;
+    font-size: $display-28;
+    outline: none;
+    @include transition(0.3s);
+    text-shadow: none;
+    &:hover {
+      background-color: $theme-color-2;
+      color: $white;
+    }
+  }
+}
+/*===== copy-to-clipboard =====*/
+.copy-to-clipboard {
+  position: relative;
+  margin-bottom: 15px;
+  .contact-form-action {
+    .form-control {
+      padding: 10px 20px;
+    }
+  }
+  .theme-btn {
+    margin-left: 5px;
+  }
+}
+/*===== text-success-message =====*/
+.text-success-message {
+  background-color: $color-4;
+  color: $white;
+  @include border-radius(4px);
+  padding: 3px 6px;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  @include transition(0.4s);
+  font-size: $default-font-2;
+  opacity: 0;
+  visibility: hidden;
+  @include transform(translateX(-50%));
+  &.active {
+    top: -40px;
+    opacity: 1;
+    visibility: visible;
+  }
+  &:after {
+    position: absolute;
+    content: "";
+    bottom: -4px;
+    left: 50%;
+    @include transform(translateX(-50%) rotate(45deg));
+    background-color: $color-4;
+    width: 8px;
+    height: 8px;
+  }
+}
+
+/*===== copy-tooltip =====*/
+.copy-tooltip {
+  position: relative;
+  display: inline-block;
+  .tooltip-text {
+    width: 140px;
+    background-color: $theme-color;
+    color: $white;
+    text-align: center;
+    @include border-radius(4px);
+    line-height: 30px;
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    left: 50%;
+    margin-left: -70px;
+    display: none;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: $theme-color transparent transparent transparent;
+    }
+  }
+  &:hover {
+    .tooltip-text {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+/*============ author-content ===============*/
+.author-content {
+  .author-img {
+    width: 64px;
+    height: 64px;
+    @include border-radius(50%);
+    margin-right: 15px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    img {
+      @include border-radius(50%);
+      width: 100%;
+      height: 100%;
+      border: 3px solid $white;
+      @include box-shadow(0 0 40px rgba(82, 85, 90, 0.05));
+    }
+  }
+  .author-img-md {
+    width: 100px;
+    height: 100px;
+  }
+  .author-bio{
+    .rating-stars li,
+    .author__meta {
+      font-size: $default-font-2;
+    }
+    .author__title {
+      color: $theme-color;
+      font-size: $default-font;
+      font-weight: $font-weight-medium;
+      a {
+        color: $theme-color;
+      }
+    }
+  }
+}
+
+/*============ avatar ===============*/
+.avatar {
+  background-color: $theme-color-4;
+  @include border-radius(100%);
+  height: 48px;
+  width: 48px;
+  img {
+    width: 100%;
+    height: 100%;
+    @include border-radius(100%);
+  }
+}
+
+.avatar-lg {
+  width: 80px;
+  height: 80px;
+}
+.avatar-sm {
+  width: 36px;
+  height: 36px;
+}
